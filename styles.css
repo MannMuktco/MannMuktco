@@ -1,0 +1,164 @@
+﻿/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka', sans-serif;
+}
+
+
+.background {
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Header Section */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+
+.logo {
+  max-height: 80px;
+  margin-right: 20px;
+}
+
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.title {
+  font-size: 2rem;
+  color: #734327;
+}
+
+
+.tagline {
+  font-size: 1.2rem;
+  color: #1c7391;
+  font-family: 'Playpen Sans', sans-serif;
+}
+
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1c7391;
+  padding: 10px 0;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Playpen Sans', sans-serif;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+.navbar a:hover {
+  background-color: #f7aa47;
+  transition: 0.3s;
+}
+
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropbtn {
+  background-color: #1c7391;
+  color: white;
+  font-family: 'Playpen Sans', sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.dropbtn:hover {
+  background-color: #f7aa47;
+  transition: 0.3s;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1c7391;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #f7aa47;
+  transition: 0.3s;
+}
+
+
+/* Content Box */
+.content-box {
+  margin: 3in 1.5in;
+  background-color: #1c7391;
+  color: white;
+  padding: 20px;
+  border: 3px solid #f7aa47;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #1c7391;
+}
+
+
+.icon {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+
+.icon:hover {
+  color: #f7aa47;
+  transition: 0.3s;
+}
