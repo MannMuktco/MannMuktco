@@ -18,31 +18,32 @@ body, html {
 /* Header Section */
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px 40px;
 }
 
 .logo {
-  max-height: 160px; /* Doubled the size */
+  max-height: 160px; /* Doubled the logo size */
   margin-right: 20px;
 }
 
 .title-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .title {
   font-size: 3rem;
   color: #734327;
+  margin: 0; /* Ensures no unnecessary spacing above the title */
 }
 
 .tagline {
   font-size: 1.5rem;
   color: #1c7391;
   font-family: 'Playpen Sans', sans-serif;
-  margin-top: 5px; /* Reduced space between title and tagline */
+  margin: 5px 0 0 0; /* Minimal spacing below the title */
   text-align: left;
 }
 
@@ -53,6 +54,7 @@ body, html {
   gap: 20px;
   background-color: #1c7391;
   padding: 10px 0;
+  margin-top: 10px; /* Align navigation closer to tagline */
 }
 
 .navbar a, .dropbtn {
@@ -114,7 +116,7 @@ body, html {
   background-color: #1c7391;
   color: white;
   padding: 20px;
-  border: 5px solid #f7aa47; /* Updated to match the 0.5in space */
+  border: 3px solid #f7aa47; /* Matches the border space */
   border-radius: 15px;
   font-size: 1.2rem;
   font-family: 'Playpen Sans', sans-serif;
