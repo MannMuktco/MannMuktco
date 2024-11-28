@@ -2,6 +2,9 @@
 body, html {
   margin: 0;
   padding: 0;
+  background-image: url('background.png');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Header Section */
@@ -31,10 +34,11 @@ body, html {
 }
 
 .tagline {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #1c7391;
   font-family: 'Playpen Sans';
   margin-top: 5px;
+  white-space: nowrap;
 }
 
 /* Navigation Buttons */
@@ -47,11 +51,13 @@ body, html {
   text-decoration: none;
   color: white;
   font-family: 'Playpen Sans';
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 10px;
   background-color: #1c7391;
   cursor: pointer;
   margin-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-button:hover {
@@ -64,4 +70,44 @@ body, html {
   display: inline-block;
 }
 
-.dropdown-content
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1c7391;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f7aa47;
+  transition: 0.3s;
+}
+
+/* Content Box */
+.content-container {
+  margin: 1.5in;
+  padding: 0;
+  position: relative;
+}
+
+.content-box {
+  background-color: #1c7391;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  font-family: 'Playpen Sans';
+  height: calc(100vh - 6in);
+  box-sizing: border-box;
