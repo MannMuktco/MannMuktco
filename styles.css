@@ -60,7 +60,9 @@ body, html {
   align-items: center;
   justify-content: center;
   height: 50px;
-  font-size: 1.2rem;
+  font-size: 0.6rem;
+  outline: none;
+  border: none;
 }
 
 .nav-button:hover {
@@ -92,6 +94,8 @@ body, html {
   padding: 10px;
   text-decoration: none;
   display: block;
+  outline: none;
+  border: none;
 }
 
 .dropdown-content a:hover {
