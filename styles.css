@@ -35,7 +35,7 @@ body, html {
   color: #734327;
   margin: 0;
   font-family: 'Fredoka';
-  margin-top: 13px;
+  margin-top: 18px;
 }
 
 .tagline {
@@ -54,7 +54,7 @@ body, html {
   gap: 10px;
   position: absolute;
   left: calc(1.5cm + 110px + 0.5in + 244px); /* logo width + margins + 144px offset */
-  top: 58px; /* Aligned with tagline */
+  top: 63px; /* Aligned with tagline */
 }
 
 .nav-button {
