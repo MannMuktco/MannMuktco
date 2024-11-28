@@ -52,7 +52,7 @@ body, html {
   flex-wrap: wrap;
   gap: 10px;
   position: absolute;
-  left: calc(1.5cm + 110px + 0.5in); /* logo width + margins */
+  left: calc(1.5cm + 110px + 0.5in + 144px); /* logo width + margins + 144px offset */
   top: 45px; /* Aligned with tagline */
 }
 
