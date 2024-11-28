@@ -59,34 +59,9 @@ body, html {
   transition: 0.3s;
 }
 
-/* Content Box */
-.content-container {
-  margin: 1.5in;
-  padding: 0;
+.dropdown {
   position: relative;
+  display: inline-block;
 }
 
-.content-box {
-  background-color: #1c7391;
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  font-family: 'Playpen Sans';
-  height: calc(100vh - 6in);
-  box-sizing: border-box;
-  position: relative;
-  z-index: 1;
-}
-
-.content-box::before {
-  content: '';
-  position: absolute;
-  top: -0.5in;
-  left: -0.5in;
-  right: -0.5in;
-  bottom: -0.5in;
-  background-color: transparent;
-  border: 3px solid #f7aa47;
-  border-radius: 15px;
-  z-index: -1;
-}
+.dropdown-content
