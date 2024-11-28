@@ -45,24 +45,26 @@ body, html {
 .navbar {
   display: flex;
   align-items: center;
+  gap: 20px; /* Consistent spacing between buttons */
 }
 
 .nav-button {
   text-decoration: none;
   color: white;
   font-family: 'Playpen Sans';
-  padding: 5px 20px;
+  padding: 10px 20px; /* Adjusted padding for better text fitting */
   border-radius: 10px;
   background-color: #1c7391;
   cursor: pointer;
-  margin-right: 20px;
-  display: flex;
+  display: inline-flex; /* Changed to inline-flex */
   align-items: center;
   justify-content: center;
-  height: 0.7cm;
+  height: 40px; /* Fixed height for all buttons */
+  min-width: 100px; /* Minimum width to ensure buttons aren't too narrow */
   font-size: 0.9rem;
   outline: none;
   border: none;
+  box-sizing: border-box; /* Ensures padding doesn't increase total height */
 }
 
 .nav-button:hover {
@@ -73,6 +75,13 @@ body, html {
 .dropdown {
   position: relative;
   display: inline-block;
+  height: 40px; /* Match button height */
+}
+
+.dropdown-trigger {
+  height: 100%; /* Ensures dropdown trigger matches button height */
+  display: inline-flex;
+  align-items: center;
 }
 
 .dropdown-content {
