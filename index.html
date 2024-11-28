@@ -1,155 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dummy Website</title>
+  <title>MannMukt.co</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #333;
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-    }
-
-    nav {
-      background: #555;
-      color: #fff;
-      text-align: center;
-      padding: 0.5rem 0;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
-      height: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    .container {
-      padding: 2rem;
-    }
-
-    .services,
-    .gallery {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .service,
-    .gallery img {
-      margin: 1rem;
-      max-width: 30%;
-    }
-
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-      margin-top: 2rem;
-    }
-  </style>
 </head>
-
 <body>
+  <!-- Background -->
+  <div class="background">
 
-  <!-- Header -->
-  <header>
-    <h1>Dummy Website</h1>
-  </header>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Welcome to Our Dummy Website</h2>
-    <p>Your tagline here</p>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="container">
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eros vitae nisi sodales, nec ultricies magna blandit. Aenean non diam nulla. Etiam imperdiet tincidunt eros vel bibendum.</p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="container">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Service 1</h3>
-        <p>Brief description of the service.</p>
+    <!-- Header Section -->
+    <header class="header">
+      <img src="images/logo.png" alt="MannMukt Logo" class="logo">
+      <div class="title-section">
+        <h1 class="title">MannMukt.co</h1>
+        <p class="tagline">Where Therapy Meets Your Pace</p>
       </div>
-      <div class="service">
-        <h3>Service 2</h3>
-        <p>Brief description of the service.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <a href="#about-us">About Us</a>
+      <a href="#expertise">Areas of Expertise</a>
+      <a href="#therapist">Meet Your Therapist</a>
+      <a href="#schedule">Schedule a Session</a>
+      <a href="#join">Join the Team</a>
+      <div class="dropdown">
+        <button class="dropbtn">Wellness Resources</button>
+        <div class="dropdown-content">
+          <a href="#blogs">Blogs on Mental Health</a>
+          <a href="#tests">Psychological Tests</a>
+        </div>
       </div>
-      <div class="service">
-        <h3>Service 3</h3>
-        <p>Brief description of the service.</p>
-      </div>
+      <a href="#contact">Get in Touch</a>
+    </nav>
+
+    <!-- Content Box -->
+    <div class="content-box">
+      <p>Welcome to MannMukt.co! Begin your journey from awareness to advancement with our range of therapy and wellness resources.</p>
     </div>
-  </section>
 
-  <!-- Gallery Section -->
-  <section id="gallery" class="container">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/300" alt="Gallery Image 1">
-      <img src="https://via.placeholder.com/300" alt="Gallery Image 2">
-      <img src="https://via.placeholder.com/300" alt="Gallery Image 3">
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>Dummy Website &copy; 2024</p>
-    <p>
-      <a href="https://example.com" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
-      <a href="mailto:contact@example.com">Contact Us</a>
-    </p>
-  </footer>
-
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="https://wa.me/+918082044336" class="icon whatsapp" target="_blank">WhatsApp</a>
+      <a href="mailto:mannmukt.co@gmail.com" class="icon email" target="_blank">Email</a>
+      <a href="https://www.instagram.com/mannmukt.co/" class="icon instagram" target="_blank">Instagram</a>
+    </footer>
+  </div>
 </body>
-
 </html>
