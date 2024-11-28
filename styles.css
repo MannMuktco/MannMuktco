@@ -51,7 +51,7 @@ body, html {
   text-decoration: none;
   color: white;
   font-family: 'Playpen Sans';
-  padding: 15px 20px;
+  padding: 5px 20px;
   border-radius: 10px;
   background-color: #1c7391;
   cursor: pointer;
@@ -59,8 +59,8 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  font-size: 0.6rem;
+  height: 0.7cm;
+  font-size: 0.9rem;
   outline: none;
   border: none;
 }
