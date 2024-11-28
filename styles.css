@@ -35,13 +35,14 @@ body, html {
   color: #734327;
   margin: 0;
   font-family: 'Fredoka';
+  margin-top: 5px;
 }
 
 .tagline {
   font-size: 1rem;
   color: #1c7391;
   font-family: 'Playpen Sans';
-  margin-top: 5px;
+  margin-top: 10px;
   white-space: nowrap;
 }
 
@@ -53,7 +54,7 @@ body, html {
   gap: 10px;
   position: absolute;
   left: calc(1.5cm + 110px + 0.5in + 244px); /* logo width + margins + 144px offset */
-  top: 45px; /* Aligned with tagline */
+  top: 50px; /* Aligned with tagline */
 }
 
 .nav-button {
