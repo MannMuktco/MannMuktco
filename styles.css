@@ -2,7 +2,6 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Playpen Sans', sans-serif;
 }
 
 /* Header Section */
@@ -13,81 +12,49 @@ body, html {
 }
 
 .logo {
-  max-height: 320px;
+  height: 160px;
   margin-right: 20px;
 }
 
 .title-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  margin-right: 1.5in;
 }
 
 .title {
   font-size: 3rem;
   color: #734327;
   margin: 0;
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Fredoka';
 }
 
 .tagline {
   font-size: 1.5rem;
   color: #1c7391;
-  font-family: 'Playpen Sans', sans-serif;
+  font-family: 'Playpen Sans';
   margin-top: 5px;
-  text-align: center;
 }
 
 /* Navigation Buttons */
 .navbar {
   display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-  margin-top: 10px;
+  align-items: center;
 }
 
 .nav-button {
   text-decoration: none;
   color: white;
-  font-family: 'Playpen Sans', sans-serif;
+  font-family: 'Playpen Sans';
   padding: 10px 20px;
   border-radius: 10px;
   background-color: #1c7391;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .nav-button:hover {
-  background-color: #f7aa47;
-  transition: 0.3s;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #1c7391;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
   background-color: #f7aa47;
   transition: 0.3s;
 }
@@ -96,6 +63,7 @@ body, html {
 .content-container {
   margin: 1.5in;
   padding: 0;
+  position: relative;
 }
 
 .content-box {
@@ -103,8 +71,7 @@ body, html {
   color: white;
   padding: 20px;
   border-radius: 15px;
-  font-size: 1.2rem;
-  font-family: 'Playpen Sans', sans-serif;
+  font-family: 'Playpen Sans';
   height: calc(100vh - 6in);
   box-sizing: border-box;
   position: relative;
@@ -119,7 +86,7 @@ body, html {
   right: -0.5in;
   bottom: -0.5in;
   background-color: transparent;
-  border: 3px solid #7aa47a;
+  border: 3px solid #f7aa47;
   border-radius: 15px;
   z-index: -1;
 }
