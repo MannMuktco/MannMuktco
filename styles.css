@@ -12,31 +12,33 @@ body, html {
 .header {
  display: flex;
  align-items: center;
- padding: 10px 40px;
+ padding: 10px 20px;
  margin-left: 1.5cm;
+ flex-wrap: wrap;
+ gap: 20px;
+ justify-content: flex-start;
 }
 
 .logo {
- height: 120px;
- margin-right: 20px;
+ height: 100px;
+ margin-right: 10px;
 }
 
 .title-section {
  display: flex;
  flex-direction: column;
- align-items: flex-start;
- margin-right: 1in;
+ margin-right: 0.5in;
 }
 
 .title {
- font-size: 2.5rem;
+ font-size: 2rem;
  color: #734327;
  margin: 0;
  font-family: 'Fredoka';
 }
 
 .tagline {
- font-size: 1.2rem;
+ font-size: 1rem;
  color: #1c7391;
  font-family: 'Playpen Sans';
  margin-top: 5px;
@@ -47,24 +49,27 @@ body, html {
 .navbar {
  display: flex;
  align-items: center;
- gap: 20px;
+ flex-wrap: wrap;
+ gap: 10px;
+ width: 100%;
 }
 
 .nav-button {
  text-decoration: none;
  color: white;
  font-family: 'Playpen Sans';
- padding: 5px 15px;
+ padding: 5px 10px;
  border-radius: 10px;
  background-color: #1c7391;
  cursor: pointer;
  display: inline-flex;
  align-items: center;
  justify-content: center;
- height: 40px;
- min-width: 90px;
+ height: 35px;
+ flex: 0 1 auto;
+ min-width: 70px;
  max-width: 200px;
- font-size: 0.9rem;
+ font-size: 0.8rem;
  outline: none;
  border: none;
  box-sizing: border-box;
@@ -81,7 +86,7 @@ body, html {
 .dropdown {
  position: relative;
  display: inline-block;
- height: 40px;
+ height: 35px;
 }
 
 .dropdown-trigger {
