@@ -30,21 +30,19 @@ body, html {
 .title-section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .title {
   font-size: 3rem;
   color: #734327;
-  margin: 0; /* Ensures no unnecessary spacing above the title */
+  margin: 0;
 }
 
 .tagline {
   font-size: 1.5rem;
   color: #1c7391;
   font-family: 'Playpen Sans', sans-serif;
-  margin: 5px 0 0 0; /* Minimal spacing below the title */
-  text-align: left;
+  margin-top: 5px;
 }
 
 /* Navigation Bar */
@@ -54,7 +52,7 @@ body, html {
   gap: 20px;
   background-color: #1c7391;
   padding: 10px 0;
-  margin-top: 10px; /* Align navigation closer to tagline */
+  margin-top: 10px;
 }
 
 .navbar a, .dropbtn {
@@ -85,7 +83,6 @@ body, html {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
-  margin-top: 5px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -111,13 +108,18 @@ body, html {
 }
 
 /* Content Box */
-.content-box {
+.content-container {
   margin: 3in 1.5in;
+}
+
+.content-box {
   background-color: #1c7391;
   color: white;
   padding: 20px;
-  border: 3px solid #f7aa47; /* Matches the border space */
+  border: 3px solid #f7aa47;
   border-radius: 15px;
   font-size: 1.2rem;
   font-family: 'Playpen Sans', sans-serif;
+  height: calc(100vh - 6in); /* Ensures the box stretches appropriately */
+  box-sizing: border-box; /* Includes padding and border in size calculation */
 }
