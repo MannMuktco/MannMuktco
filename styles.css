@@ -1,20 +1,26 @@
+/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playpen Sans', sans-serif;
+}
+
 /* Header Section */
 .header {
   display: flex;
-  align-items: center; /* Changed to center */
+  align-items: center;
   padding: 20px 40px;
 }
 
 .logo {
-  max-height: 160px; /* Doubled the logo size */
+  max-height: 320px;
   margin-right: 20px;
 }
 
 .title-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 0; /* Removed margin */
+  align-items: center;
 }
 
 .title {
@@ -32,17 +38,15 @@
   text-align: center;
 }
 
-/* Navigation Bar */
+/* Navigation Buttons */
 .navbar {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  background-color: #1c7391;
+  justify-content: space-around;
   padding: 10px 0;
   margin-top: 10px;
 }
 
-.navbar a, .dropbtn {
+.nav-button {
   text-decoration: none;
   color: white;
   font-family: 'Playpen Sans', sans-serif;
@@ -52,26 +56,70 @@
   cursor: pointer;
 }
 
-.navbar a:hover, .dropbtn:hover {
-  background-color: #7aa47a;
+.nav-button:hover {
+  background-color: #f7aa47;
+  transition: 0.3s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1c7391;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f7aa47;
   transition: 0.3s;
 }
 
 /* Content Box */
 .content-container {
-  margin: 3in 1.5in;
+  margin: 1.5in;
+  padding: 0;
 }
 
 .content-box {
   background-color: #1c7391;
   color: white;
   padding: 20px;
-  border: 3px solid #7aa47a;
   border-radius: 15px;
   font-size: 1.2rem;
   font-family: 'Playpen Sans', sans-serif;
   height: calc(100vh - 6in);
   box-sizing: border-box;
-  border: 3px solid #7aa47a; /* Added border */
-  box-shadow: 0px 0px 0px 5px #1c7391; /* Added box-shadow */
+  position: relative;
+  z-index: 1;
+}
+
+.content-box::before {
+  content: '';
+  position: absolute;
+  top: -0.5in;
+  left: -0.5in;
+  right: -0.5in;
+  bottom: -0.5in;
+  background-color: transparent;
+  border: 3px solid #7aa47a;
+  border-radius: 15px;
+  z-index: -1;
 }
