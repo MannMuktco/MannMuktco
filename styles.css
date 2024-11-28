@@ -5,36 +5,39 @@ body, html {
   background-image: url('background.png');
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header Section */
 .header {
   display: flex;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 20px; /* Reduced padding */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center items */
 }
 
 .logo {
-  height: 160px;
-  margin-right: 20px;
+  height: 100px; /* Reduced from 160px */
+  margin-right: 10px; /* Reduced margin */
 }
 
 .title-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 1.5in;
+  margin-right: 0.5in; /* Reduced margin */
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem; /* Reduced from 3rem */
   color: #734327;
   margin: 0;
   font-family: 'Fredoka';
 }
 
 .tagline {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Reduced from 1.2rem */
   color: #1c7391;
   font-family: 'Playpen Sans';
   margin-top: 5px;
@@ -45,14 +48,16 @@ body, html {
 .navbar {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px; /* Reduced gap */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center; /* Center buttons */
 }
 
 .nav-button {
   text-decoration: none;
   color: white;
   font-family: 'Playpen Sans';
-  padding: 5px 15px;
+  padding: 5px 12px; /* Slightly reduced padding */
   border-radius: 10px;
   background-color: #1c7391;
   cursor: pointer;
@@ -60,9 +65,9 @@ body, html {
   align-items: center;
   justify-content: center;
   height: 35px;
-  min-width: 80px;
-  max-width: 200px;
-  font-size: 0.8rem;
+  min-width: 70px; /* Slightly reduced */
+  max-width: 180px;
+  font-size: 0.75rem; /* Slightly smaller font */
   outline: none;
   border: none;
   box-sizing: border-box;
@@ -70,6 +75,8 @@ body, html {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Rest of the CSS remains the same as in the previous submission */
 
 .nav-button:hover {
   background-color: #f7aa47;
