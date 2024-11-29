@@ -58,15 +58,18 @@ body, html {
 }
 
 /* Navigation Buttons */
+/* Navigation Buttons */
 .navbar {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   position: absolute;
-  left: calc(1.5cm + 110px + 0.5in + 244px);
-  top: 71px; /* Increased by 10px from previous 61px */
+  left: calc(1.5cm + 110px + 0.5in + 244px + 20px); /* Added 20px */
+  top: 71px;
 }
+
+/* Rest of the CSS remains the same */
 
 /* Rest of the CSS remains the same */
 
