@@ -31,20 +31,30 @@ body, html {
 }
 
 /* Header Section */
+/* Title Section */
+.title-section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5in;
+  align-items: center; /* Center aligns the children horizontally */
+}
+
 .title {
   font-size: 2rem;
   color: #734327;
   margin: 0;
   font-family: 'Fredoka';
-  margin-top: 30.6px; /* increased from 23px by 7.6px */
+  margin-top: 30.6px;
+  text-align: center; /* Ensures text itself is centered */
 }
 
 .tagline {
   font-size: 1rem;
   color: #1c7391;
   font-family: 'Playpen Sans';
-  margin-top: 8.4px; /* decreased from 16px by 7.6px */
+  margin-top: 8.4px;
   white-space: nowrap;
+  text-align: center; /* Ensures text itself is centered */
 }
 
 /* Navigation Buttons */
@@ -55,7 +65,7 @@ body, html {
   gap: 10px;
   position: absolute;
   left: calc(1.5cm + 110px + 0.5in + 244px);
-  top: 61px; /* Adjusted to align with tagline's new position */
+  top: 71px; /* Increased by 10px from previous 61px */
 }
 
 /* Rest of the CSS remains the same */
