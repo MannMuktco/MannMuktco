@@ -1,4 +1,4 @@
-/* General Styling /
+/* General Styling */
 body, html {
   margin: 0;
   padding: 0;
@@ -10,8 +10,8 @@ body, html {
   min-height: 100vh;
   overflow-x: hidden;
 }
-/ Rest of the CSS remains the same /
-/ Header Section /
+
+/* Header Section */
 .header {
   display: flex;
   align-items: flex-start;
@@ -20,54 +20,51 @@ body, html {
   flex-wrap: wrap;
   gap: 20px;
   position: relative;
-  background: transparent; / Ensures header doesn't block background /
+  background: transparent;
 }
+
 .logo {
   height: 100px;
   margin-right: 10px;
 }
+
+/* Title Section */
 .title-section {
   display: flex;
   flex-direction: column;
   margin-right: 0.5in;
+  align-items: center;
 }
-/ Header Section /
-/ Title Section /
-.title-section {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0.5in;
-  align-items: center; / Center aligns the children horizontally /
-}
+
 .title {
   font-size: 2rem;
   color: #734327;
   margin: 0;
   font-family: 'Fredoka';
   margin-top: 30.6px;
-  text-align: center; / Ensures text itself is centered /
+  text-align: center;
 }
+
 .tagline {
   font-size: 1rem;
   color: #1c7391;
   font-family: 'Playpen Sans';
   margin-top: 8.4px;
   white-space: nowrap;
-  text-align: center; / Ensures text itself is centered /
+  text-align: center;
 }
-/ Navigation Buttons /
-/ Navigation Buttons /
+
+/* Navigation Buttons */
 .navbar {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   position: absolute;
-  left: calc(1.5cm + 110px + 0.5in + 244px + 20px); / Added 20px /
+  left: calc(1.5cm + 110px + 0.5in + 244px + 20px);
   top: 71px;
 }
-/ Rest of the CSS remains the same /
-/ Rest of the CSS remains the same /
+
 .nav-button {
   text-decoration: none;
   color: white;
@@ -91,32 +88,40 @@ body, html {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .nav-button:hover {
   background-color: #f7aa47;
   transition: 0.3s;
 }
+
+/* Dropdown Styling */
 .dropdown {
   position: relative;
   display: inline-block;
   height: 35px;
 }
+
 .dropdown-trigger {
   height: 100%;
   display: inline-flex;
   align-items: center;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1c7391;
+  background-color: rgba(28, 115, 145, 0.95);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
   padding: 10px;
+  backdrop-filter: blur(5px);
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .dropdown-content a {
   color: white;
   padding: 10px;
@@ -125,19 +130,22 @@ body, html {
   outline: none;
   border: none;
 }
+
 .dropdown-content a:hover {
   background-color: #f7aa47;
   transition: 0.3s;
 }
-/ Content Box /
+
+/* Content Box */
 .content-container {
-  margin: 1.5in 1.5in 1.5in 1.5in;
+  margin: 1.5in;
   padding: 0;
   position: relative;
   top: 1.5in;
 }
+
 .content-box {
-  background-color: rgba(28, 115, 145, 0.95); / Slightly transparent to show background /
+  background-color: rgba(28, 115, 145, 0.95);
   color: white;
   padding: 20px;
   border-radius: 15px;
@@ -146,8 +154,9 @@ body, html {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  backdrop-filter: blur(5px); / Optional: adds slight blur behind the content box */
+  backdrop-filter: blur(5px);
 }
+
 .content-box::before {
   content: '';
   position: absolute;
