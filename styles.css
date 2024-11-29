@@ -2,7 +2,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  background-image: url('background.png');
+  background-image: url('images/background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,6 +10,8 @@ body, html {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+/* Rest of the CSS remains the same */
 /* Header Section */
 .header {
   display: flex;
