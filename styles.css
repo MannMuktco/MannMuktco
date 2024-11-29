@@ -1,4 +1,4 @@
-/* General Styling */
+/* General Styling /
 body, html {
   margin: 0;
   padding: 0;
@@ -10,9 +10,8 @@ body, html {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
-/* Rest of the CSS remains the same */
-/* Header Section */
+/ Rest of the CSS remains the same /
+/ Header Section /
 .header {
   display: flex;
   align-items: flex-start;
@@ -21,63 +20,54 @@ body, html {
   flex-wrap: wrap;
   gap: 20px;
   position: relative;
-  background: transparent; /* Ensures header doesn't block background */
+  background: transparent; / Ensures header doesn't block background /
 }
-
 .logo {
   height: 100px;
   margin-right: 10px;
 }
-
 .title-section {
   display: flex;
   flex-direction: column;
   margin-right: 0.5in;
 }
-
-/* Header Section */
-/* Title Section */
+/ Header Section /
+/ Title Section /
 .title-section {
   display: flex;
   flex-direction: column;
   margin-right: 0.5in;
-  align-items: center; /* Center aligns the children horizontally */
+  align-items: center; / Center aligns the children horizontally /
 }
-
 .title {
   font-size: 2rem;
   color: #734327;
   margin: 0;
   font-family: 'Fredoka';
   margin-top: 30.6px;
-  text-align: center; /* Ensures text itself is centered */
+  text-align: center; / Ensures text itself is centered /
 }
-
 .tagline {
   font-size: 1rem;
   color: #1c7391;
   font-family: 'Playpen Sans';
   margin-top: 8.4px;
   white-space: nowrap;
-  text-align: center; /* Ensures text itself is centered */
+  text-align: center; / Ensures text itself is centered /
 }
-
-/* Navigation Buttons */
-/* Navigation Buttons */
+/ Navigation Buttons /
+/ Navigation Buttons /
 .navbar {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   position: absolute;
-  left: calc(1.5cm + 110px + 0.5in + 244px + 20px); /* Added 20px */
+  left: calc(1.5cm + 110px + 0.5in + 244px + 20px); / Added 20px /
   top: 71px;
 }
-
-/* Rest of the CSS remains the same */
-
-/* Rest of the CSS remains the same */
-
+/ Rest of the CSS remains the same /
+/ Rest of the CSS remains the same /
 .nav-button {
   text-decoration: none;
   color: white;
@@ -101,24 +91,20 @@ body, html {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .nav-button:hover {
   background-color: #f7aa47;
   transition: 0.3s;
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
   height: 35px;
 }
-
 .dropdown-trigger {
   height: 100%;
   display: inline-flex;
   align-items: center;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -128,11 +114,9 @@ body, html {
   border-radius: 10px;
   padding: 10px;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 .dropdown-content a {
   color: white;
   padding: 10px;
@@ -141,22 +125,19 @@ body, html {
   outline: none;
   border: none;
 }
-
 .dropdown-content a:hover {
   background-color: #f7aa47;
   transition: 0.3s;
 }
-
-/* Content Box */
+/ Content Box /
 .content-container {
   margin: 1.5in 1.5in 1.5in 1.5in;
   padding: 0;
   position: relative;
   top: 1.5in;
 }
-
 .content-box {
-  background-color: rgba(28, 115, 145, 0.95); /* Slightly transparent to show background */
+  background-color: rgba(28, 115, 145, 0.95); / Slightly transparent to show background /
   color: white;
   padding: 20px;
   border-radius: 15px;
@@ -165,9 +146,8 @@ body, html {
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  backdrop-filter: blur(5px); /* Optional: adds slight blur behind the content box */
+  backdrop-filter: blur(5px); / Optional: adds slight blur behind the content box */
 }
-
 .content-box::before {
   content: '';
   position: absolute;
@@ -179,42 +159,4 @@ body, html {
   border: 3px solid #f7aa47;
   border-radius: 15px;
   z-index: -1;
-}
-/* Add these styles to your existing CSS file */
-
-.about-container {
-  margin: 20px;
-  padding: 0;
-  position: relative;
-  top: 1.5in;
-}
-
-.about-box {
-  background-color: rgba(28, 115, 145, 0.95);
-  color: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 1;
-  border: 3px solid #f7aa47;
-  min-height: calc(100vh - 4in);
-}
-
-.about-title {
-  font-family: 'Playpen Sans';
-  color: #1c7391;
-  font-size: 2rem;
-  margin: 0;
-  margin-left: 57px;
-  margin-top: 20px;
-}
-
-.about-company {
-  font-family: 'Fredoka';
-  color: #734327;
-  font-size: 4rem;
-  margin: 0;
-  margin-left: 57px;
-  margin-top: 10px;
 }
