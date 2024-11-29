@@ -180,3 +180,41 @@ body, html {
   border-radius: 15px;
   z-index: -1;
 }
+/* Add these styles to your existing CSS file */
+
+.about-container {
+  margin: 20px;
+  padding: 0;
+  position: relative;
+  top: 1.5in;
+}
+
+.about-box {
+  background-color: rgba(28, 115, 145, 0.95);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  border: 3px solid #f7aa47;
+  min-height: calc(100vh - 4in);
+}
+
+.about-title {
+  font-family: 'Playpen Sans';
+  color: #1c7391;
+  font-size: 2rem;
+  margin: 0;
+  margin-left: 57px;
+  margin-top: 20px;
+}
+
+.about-company {
+  font-family: 'Fredoka';
+  color: #734327;
+  font-size: 4rem;
+  margin: 0;
+  margin-left: 57px;
+  margin-top: 10px;
+}
