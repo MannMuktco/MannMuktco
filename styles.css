@@ -30,19 +30,20 @@ body, html {
   margin-right: 0.5in;
 }
 
+/* Header Section */
 .title {
   font-size: 2rem;
   color: #734327;
   margin: 0;
   font-family: 'Fredoka';
-  margin-top: 23px;
+  margin-top: 30.6px; /* increased from 23px by 7.6px */
 }
 
 .tagline {
   font-size: 1rem;
   color: #1c7391;
   font-family: 'Playpen Sans';
-  margin-top: 16px;
+  margin-top: 8.4px; /* decreased from 16px by 7.6px */
   white-space: nowrap;
 }
 
@@ -53,9 +54,11 @@ body, html {
   flex-wrap: wrap;
   gap: 10px;
   position: absolute;
-  left: calc(1.5cm + 110px + 0.5in + 244px); /* logo width + margins + 144px offset */
-  top: 68px; /* Aligned with tagline */
+  left: calc(1.5cm + 110px + 0.5in + 244px);
+  top: 61px; /* Adjusted to align with tagline's new position */
 }
+
+/* Rest of the CSS remains the same */
 
 .nav-button {
   text-decoration: none;
