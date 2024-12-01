@@ -16,7 +16,7 @@ body, html {
   display: flex;
   align-items: flex-start;
   padding: 10px 20px;
-  margin-left: calc(1.5cm - 0.5in); /* Reduced by 0.5in */
+  margin-left: calc(1.5cm - 0.5in);
   flex-wrap: wrap;
   gap: 20px;
   position: relative;
@@ -61,7 +61,7 @@ body, html {
   flex-wrap: nowrap;
   gap: 8px;
   position: absolute;
-  left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in); /* Reduced by 0.5in */
+  left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in);
   top: 71px;
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
 }
@@ -70,7 +70,7 @@ body, html {
   text-decoration: none;
   color: white;
   font-family: 'Playpen Sans';
-  padding: 5px 8px; /* Reduced horizontal padding */
+  padding: 5px 8px;
   border-radius: 10px;
   background-color: #1c7391;
   cursor: pointer;
@@ -79,9 +79,9 @@ body, html {
   justify-content: center;
   height: 35px;
   flex: 0 1 auto;
-  min-width: 60px; /* Reduced minimum width */
-  max-width: 150px; /* Reduced maximum width */
-  font-size: 0.75rem; /* Slightly smaller font */
+  min-width: 60px;
+  max-width: 150px;
+  font-size: 0.75rem;
   outline: none;
   border: none;
   box-sizing: border-box;
@@ -89,8 +89,6 @@ body, html {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-/* Rest of the CSS remains the same */
 
 .nav-button:hover {
   background-color: #f7aa47;
@@ -119,6 +117,7 @@ body, html {
   border-radius: 10px;
   padding: 10px;
   backdrop-filter: blur(5px);
+  min-width: 40px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -126,17 +125,29 @@ body, html {
 }
 
 .dropdown-content a {
-  color: white;
-  padding: 10px;
+  padding: 8px;
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
   outline: none;
   border: none;
 }
 
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transition: transform 0.2s;
+}
+
 .dropdown-content a:hover {
-  background-color: #f7aa47;
-  transition: 0.3s;
+  background-color: rgba(247, 170, 71, 0.2);
+}
+
+.dropdown-content a:hover .contact-icon {
+  transform: scale(1.1);
 }
 
 /* Content Box */
