@@ -58,18 +58,19 @@ body, html {
 .navbar {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 8px; /* Reduced gap between buttons */
   position: absolute;
   left: calc(1.5cm + 110px + 0.5in + 244px + 20px);
   top: 71px;
+  max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px + 20px)); /* Ensure navbar doesn't overflow viewport */
 }
 
 .nav-button {
   text-decoration: none;
   color: white;
   font-family: 'Playpen Sans';
-  padding: 5px 10px;
+  padding: 5px 8px; /* Reduced horizontal padding */
   border-radius: 10px;
   background-color: #1c7391;
   cursor: pointer;
@@ -78,9 +79,9 @@ body, html {
   justify-content: center;
   height: 35px;
   flex: 0 1 auto;
-  min-width: 70px;
-  max-width: 200px;
-  font-size: 0.8rem;
+  min-width: 60px; /* Reduced minimum width */
+  max-width: 150px; /* Reduced maximum width */
+  font-size: 0.75rem; /* Slightly smaller font */
   outline: none;
   border: none;
   box-sizing: border-box;
@@ -88,6 +89,8 @@ body, html {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Rest of the CSS remains the same */
 
 .nav-button:hover {
   background-color: #f7aa47;
