@@ -16,7 +16,7 @@ body, html {
   display: flex;
   align-items: flex-start;
   padding: 10px 20px;
-  margin-left: 1.5cm;
+  margin-left: calc(1.5cm - 0.5in); /* Reduced by 0.5in */
   flex-wrap: wrap;
   gap: 20px;
   position: relative;
@@ -58,12 +58,12 @@ body, html {
 .navbar {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  gap: 8px; /* Reduced gap between buttons */
+  flex-wrap: nowrap;
+  gap: 8px;
   position: absolute;
-  left: calc(1.5cm + 110px + 0.5in + 244px + 20px);
+  left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in); /* Reduced by 0.5in */
   top: 71px;
-  max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px + 20px)); /* Ensure navbar doesn't overflow viewport */
+  max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
 }
 
 .nav-button {
