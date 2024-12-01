@@ -1,0 +1,48 @@
+﻿body, html {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+.about-container {
+  min-height: 100vh;
+  padding: 0.3in;
+  box-sizing: border-box;
+}
+
+
+.about-content {
+  min-height: calc(100vh - 0.6in);
+  border: 2px solid #f7aa47;
+  border-radius: 15px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.about-title {
+  font-family: 'Playpen Sans', cursive;
+  color: #1c7391;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+
+.company-name {
+  font-family: 'Fredoka', sans-serif;
+  color: #734327;
+  font-size: 4rem;
+  margin: 10px 0 0 0;
+  padding: 0;
+  text-align: left;
+}
