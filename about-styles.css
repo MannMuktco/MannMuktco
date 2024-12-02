@@ -148,7 +148,7 @@ body {
   flex: 1;
   max-width: 35%;
   position: fixed;
-  top: calc(67px + 40px); /* Adjusted to account for top space */
+  top: calc(0.8in + 40px); /* Adjusted to account for top space */
   right: calc(0.3in + 40px + 2%);
 }
 
