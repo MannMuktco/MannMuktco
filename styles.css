@@ -158,20 +158,21 @@ body, html {
 
 /* Content Box */
 .content-container {
-  margin: 0.5in; /* Left and right margins */
+  margin: 0.5in; /* Side margins */
   margin-top: 1.5in; /* Top margin */
   margin-bottom: 1.5in; /* Bottom margin */
   padding: 0;
   position: relative;
+  top: 0; /* Remove additional top positioning */
 }
 
 .content-box {
   background-color: #1c7391;
   color: white;
-  padding: 0.3in; /* Internal padding */
+  padding: 20px;
   border-radius: 15px;
   font-family: 'Playpen Sans';
-  height: calc(100vh - 3in); /* Adjusted for new margins */
+  min-height: calc(100vh - 3in); /* Adjusted for new margins */
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -189,4 +190,3 @@ body, html {
   border-radius: 15px;
   z-index: -1;
 }
- 
