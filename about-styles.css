@@ -37,34 +37,34 @@ body {
   overflow: visible; /* Important for sticky positioning */
 }
 
-/* Content wrapper for flex layout */
+/* Content wrapper */
 .content-wrapper {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  min-height: 100%; /* Important for sticky positioning */
-  position: relative; /* Create positioning context */
+  position: relative;
 }
 
+/* Text content */
 .text-content {
   flex: 1;
   max-width: 60%;
-  padding-bottom: 40px;
+  z-index: 1;
 }
 
+/* Logo styles */
 .logo-container {
-    flex: 1;
-    max-width: 35%;
-    position: fixed;
-    right: calc(20% - 40px);
-    top: 100px;
-    transition: transform 0.05s linear;
+  flex: 1;
+  max-width: 35%;
+  position: fixed;
+  right: calc(0.3in + 40px + 2%); /* Adjusted to prevent overlap */
+  top: calc(0.8in + 40px);
 }
 
 .floating-logo {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Text styles */
