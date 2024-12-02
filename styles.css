@@ -156,5 +156,37 @@ body, html {
   transform: scale(1.1);
 }
 
+/* Content Box */
+.content-container {
+  margin: 0.5in; /* Left and right margins */
+  margin-top: 1.5in; /* Top margin */
+  margin-bottom: 1.5in; /* Bottom margin */
+  padding: 0;
+  position: relative;
+}
 
+.content-box {
+  background-color: #1c7391;
+  color: white;
+  padding: 0.3in; /* Internal padding */
+  border-radius: 15px;
+  font-family: 'Playpen Sans';
+  height: calc(100vh - 3in); /* Adjusted for new margins */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.content-box::before {
+  content: '';
+  position: absolute;
+  top: -0.3in;
+  left: -0.3in;
+  right: -0.3in;
+  bottom: -0.3in;
+  background-color: transparent;
+  border: 2px solid #f7aa47;
+  border-radius: 15px;
+  z-index: -1;
+}
  
