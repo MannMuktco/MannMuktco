@@ -41,29 +41,27 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  min-height: 100%;
+  position: relative; /* Added */
+  overflow: visible; /* Added */
 }
 
 .text-content {
   flex: 1;
   max-width: 60%;
-  position: relative;
-  z-index: 1;
 }
 
 .logo-container {
+  position: -webkit-sticky;
   position: sticky;
-  top: 40px;
-  flex: 1;
-  max-width: 35%;
-  align-self: flex-start;
+  top: 0.8in;
+  flex: 0 0 35%; /* Changed to flex-shrink: 0 */
+  height: fit-content;
 }
 
 .floating-logo {
   width: 100%;
   height: auto;
   display: block;
-  content: url('images/logo.png');
 }
 
 /* Text styles */
