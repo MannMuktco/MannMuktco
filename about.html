@@ -10,31 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Playpen+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
-    <script>
-window.addEventListener('scroll', () => {
-    const logo = document.querySelector('.logo-container');
-    const container = document.querySelector('.about-content');
-    const containerRect = container.getBoundingClientRect();
-    const containerTop = containerRect.top;
-    const containerBottom = containerRect.bottom;
-    
-    // Calculate boundaries
-    const startPoint = containerTop + window.scrollY;
-    const maxScroll = (container.offsetHeight - logo.offsetHeight - 100) * 0.6;
-    
-    // Calculate scroll position
-     let scrollPosition = (window.scrollY - startPoint) * 0.6; // Added speed factor
-    scrollPosition = Math.max(0, Math.min(scrollPosition, maxScroll));
-    
-    // Apply scroll only when container is in view
-   if (containerRect.top < window.innerHeight && containerRect.bottom > 0) {
-        requestAnimationFrame(() => {
-            logo.style.transform = `translateY(${scrollPosition}px)`;
-        });
-    }
-});
-</script>
 </body>
 </html>
   <div class="about-container">
