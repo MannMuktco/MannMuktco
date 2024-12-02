@@ -108,7 +108,7 @@ body, html {
 .dropdown-trigger {
   height: 100%;
   display: inline-flex;
-  align-items: center;
+  align-items: left;
 }
 
 .dropdown-content {
