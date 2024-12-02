@@ -1,4 +1,4 @@
-﻿body, html {
+body, html {
   margin: 0;
   padding: 0;
   background-image: url('images/background.png');
@@ -10,13 +10,11 @@
   overflow-x: hidden;
 }
 
-
 .about-container {
   min-height: 100vh;
   padding: 0.3in;
   box-sizing: border-box;
 }
-
 
 .about-content {
   min-height: calc(100vh - 0.6in);
@@ -27,7 +25,6 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-
 .about-title {
   font-family: 'Playpen Sans', cursive;
   color: #1c7391;
@@ -36,7 +33,6 @@
   padding: 0;
   text-align: left;
 }
-
 
 .company-name {
   font-family: 'Fredoka', sans-serif;
