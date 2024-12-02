@@ -34,6 +34,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: visible; /* Important for sticky positioning */
 }
 
 /* Content wrapper for flex layout */
@@ -41,8 +42,8 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  position: relative; /* Added */
-  overflow: visible; /* Added */
+  min-height: 100%; /* Important for sticky positioning */
+  position: relative; /* Create positioning context */
 }
 
 .text-content {
@@ -51,17 +52,20 @@ body {
 }
 
 .logo-container {
-  position: -webkit-sticky;
   position: sticky;
-  top: 0.8in;
-  flex: 0 0 35%; /* Changed to flex-shrink: 0 */
-  height: fit-content;
+  position: -webkit-sticky; /* for Safari */
+  top: 0.8in; /* Match your top padding */
+  flex: 1;
+  max-width: 35%;
+  align-self: flex-start;
+  height: fit-content; /* Important for sticky positioning */
 }
 
 .floating-logo {
   width: 100%;
   height: auto;
   display: block;
+  content: url('images/logo.png');
 }
 
 /* Text styles */
