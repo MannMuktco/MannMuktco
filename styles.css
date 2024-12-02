@@ -157,14 +157,10 @@ body, html {
 }
 
 /* Content Box */
-/* Content Box */
 .content-container {
-  margin: 0 auto; /* Center the container */
-  width: calc(100% - 1in); /* Account for left and right margins */
-  padding: 0;
   position: relative;
-  margin-top: 0.8in; /* Top margin */
-  margin-bottom: 0.5in; /* Bottom margin */
+  padding: 0;
+  margin: 1.5in 0.5in 1.5in 0.5in; /* Top Right Bottom Left */
 }
 
 .content-box {
@@ -173,11 +169,10 @@ body, html {
   padding: 0.3in;
   border-radius: 15px;
   font-family: 'Playpen Sans';
-  min-height: calc(100vh - 3in);
+  width: 100%;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  max-width: 100%;
 }
 
 .content-box::before {
