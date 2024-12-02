@@ -21,14 +21,14 @@ window.addEventListener('scroll', () => {
     
     // Calculate boundaries
     const startPoint = containerTop + window.scrollY;
-    const maxScroll = container.offsetHeight - logo.offsetHeight - 100;
+    const maxScroll = (container.offsetHeight - logo.offsetHeight - 100) * 0.6;
     
     // Calculate scroll position
-    let scrollPosition = window.scrollY - startPoint;
+     let scrollPosition = (window.scrollY - startPoint) * 0.6; // Added speed factor
     scrollPosition = Math.max(0, Math.min(scrollPosition, maxScroll));
     
     // Apply scroll only when container is in view
-    if (containerRect.top < window.innerHeight && containerRect.bottom > 0) {
+   if (containerRect.top < window.innerHeight && containerRect.bottom > 0) {
         requestAnimationFrame(() => {
             logo.style.transform = `translateY(${scrollPosition}px)`;
         });
