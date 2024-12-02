@@ -131,8 +131,8 @@ body, html {
   padding: 8px;
   text-decoration: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   border-radius: 5px;
   color: white;
   font-family: 'Playpen Sans';
