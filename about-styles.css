@@ -61,9 +61,9 @@ body {
   height: auto;
   position: fixed;
   right: calc(0.3in + 40px + 2.5%);
-  top: 100px;
+  top: calc(0.3in + 40px); /* Align with content top */
   max-width: 30%;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.1s linear;
   will-change: transform;
   content: url('images/logo.png');
 }
