@@ -30,36 +30,25 @@ window.addEventListener('scroll', function() {
 });
 </script>
  <script>
-let ticking = false;
-
 window.addEventListener('scroll', function() {
-  if (!ticking) {
-    window.requestAnimationFrame(function() {
-      const logo = document.querySelector('.floating-logo');
-      const container = document.querySelector('.about-content');
-      const containerRect = container.getBoundingClientRect();
-      
-      // Get the container's top and bottom boundaries
-      const containerTop = containerRect.top;
-      const containerBottom = containerRect.bottom;
-      const windowHeight = window.innerHeight;
-      
-      // Calculate the maximum scroll distance
-      const maxScroll = Math.max(0, containerBottom - windowHeight - 100); // 100px buffer
-      
-      // Calculate new position
-      let newPosition = Math.max(0, Math.min(window.scrollY, maxScroll));
-      
-      // Only move logo when container is in view and not scrolled past the bottom
-      if (containerBottom > 0 && containerTop < windowHeight) {
-        logo.style.transform = `translateY(${newPosition}px)`;
-      }
-      
-      ticking = false;
-    });
-    
-    ticking = true;
-  }
+  const logo = document.querySelector('.floating-logo');
+  const container = document.querySelector('.about-content');
+  const textContent = document.querySelector('.text-content');
+  
+  // Get the visible portion of the container
+  const containerRect = container.getBoundingClientRect();
+  const textRect = textContent.getBoundingClientRect();
+  
+  // Calculate scroll percentage relative to text content
+  let scrollPercentage = -textRect.top / (textRect.height - window.innerHeight);
+  scrollPercentage = Math.max(0, Math.min(1, scrollPercentage));
+  
+  // Calculate the distance the logo should move
+  const maxScroll = container.offsetHeight - logo.offsetHeight - 100;
+  const newPosition = scrollPercentage * maxScroll;
+  
+  // Apply smooth transform
+  logo.style.transform = `translateY(${newPosition}px)`;
 });
 </script>
 <body>
