@@ -42,23 +42,20 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  position: relative;
 }
 
-/* Text content */
 .text-content {
   flex: 1;
   max-width: 60%;
-  z-index: 1;
 }
 
-/* Logo styles */
 .logo-container {
   flex: 1;
   max-width: 35%;
-  position: fixed;
-  right: calc(0.3in + 40px + 2%); /* Adjusted to prevent overlap */
+  position: sticky;
   top: calc(0.8in + 40px);
+  align-self: flex-start;
+  height: fit-content;
 }
 
 .floating-logo {
