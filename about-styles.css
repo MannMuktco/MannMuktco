@@ -41,27 +41,28 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  position: relative;
+  min-height: 100%;
 }
 
 .text-content {
   flex: 1;
   max-width: 60%;
+  position: relative;
+  z-index: 1;
 }
 
 .logo-container {
-  position: -webkit-sticky; /* For Safari support */
-  position: sticky;
-  top: calc(0.8in + 40px); /* Adjusted to match new top padding */
   flex: 1;
   max-width: 35%;
-  align-self: flex-start;
-  height: fit-content;
+  position: sticky;
+  top: 0.8in;
+  height: 100%;
 }
 
 .floating-logo {
   width: 100%;
   height: auto;
+  transition: all 0.3s ease;
   display: block;
   content: url('images/logo.png');
 }
