@@ -49,7 +49,6 @@ body {
   flex: 1;
   max-width: 35%;
   position: relative;
-  align-self: flex-start; /* Important for sticky positioning */
   top: 20px; /* Distance from top while scrolling */
   height: fit-content;
 }
