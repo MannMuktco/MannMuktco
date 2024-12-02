@@ -90,6 +90,7 @@ body, html {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: white;
 }
 
 .nav-button:hover {
@@ -119,7 +120,7 @@ body, html {
   border-radius: 10px;
   padding: 10px;
   backdrop-filter: blur(5px);
-  min-width: 40px;
+  min-width: 120px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -133,8 +134,9 @@ body, html {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  outline: none;
-  border: none;
+  color: white;
+  font-family: 'Playpen Sans';
+  font-size: 0.75rem;
 }
 
 .contact-icon {
@@ -145,7 +147,8 @@ body, html {
 }
 
 .dropdown-content a:hover {
-  background-color: rgba(247, 170, 71, 0.2);
+  background-color: #f7aa47;
+  color: white;
 }
 
 .dropdown-content a:hover .contact-icon {
@@ -161,16 +164,16 @@ body, html {
 }
 
 .content-box {
-  background-color: rgba(28, 115, 145, 0.95);
+  background-color: #1c7391;
   color: white;
-  padding: 20px;
+  padding: calc(0.3in + 20px);
   border-radius: 15px;
   font-family: 'Playpen Sans';
   height: calc(100vh - 6in);
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  backdrop-filter: blur(5px);
+  margin: 0.3in; /* Space from border */
 }
 
 .content-box::before {
