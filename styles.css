@@ -159,8 +159,8 @@ body, html {
 /* Content Box */
 .content-container {
   margin: 0.5in; /* Side margins */
-  margin-top: 1.5in; /* Top margin */
-  margin-bottom: 1.5in; /* Bottom margin */
+  margin-top: 0.5in; /* Top margin */
+  margin-bottom: 0.5in; /* Bottom margin */
   padding: 0;
   position: relative;
   top: 0; /* Remove additional top positioning */
