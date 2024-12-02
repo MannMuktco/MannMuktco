@@ -17,9 +17,8 @@ body {
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
+  top: 67px; /* Specific spacing above border */
+  width: 100%;
   z-index: 100;
 }
 
@@ -52,7 +51,7 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   gap: 8px;
-  position: absolute;
+  position: fixed;
   left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in);
   top: 20px;
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
