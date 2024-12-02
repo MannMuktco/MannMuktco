@@ -48,23 +48,17 @@ body {
 }
 
 .logo-container {
+  position: sticky;
+  top: 40px;
   flex: 1;
   max-width: 35%;
-  position: sticky; /* Changed from relative */
-  top: 20px;
-  height: fit-content;
-  align-self: flex-start; /* Added this */
+  align-self: flex-start;
 }
 
 .floating-logo {
   width: 100%;
   height: auto;
-  position: fixed;
-  right: calc(0.3in + 40px + 2.5%);
-  top: calc(0.3in + 40px); /* Align with content top */
-  max-width: 30%;
-  transition: transform 0.1s linear;
-  will-change: transform;
+  display: block;
   content: url('images/logo.png');
 }
 
