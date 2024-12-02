@@ -10,24 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Playpen+Sans&display=swap" rel="stylesheet">
 </head>
-<script>
-document.addEventListener('scroll', () => {
-    const logo = document.querySelector('.logo-container');
-    const content = document.querySelector('.about-content');
-    const contentRect = content.getBoundingClientRect();
-    const startOffset = contentRect.top + window.scrollY;
-    const maxScroll = content.offsetHeight - logo.offsetHeight - 100;
-    
-    let scrollPosition = window.scrollY - startOffset;
-    scrollPosition = Math.max(0, Math.min(scrollPosition, maxScroll));
-    
-    requestAnimationFrame(() => {
-        if (contentRect.top < window.innerHeight && contentRect.bottom > 0) {
-            logo.style.transform = `translateY(${scrollPosition}px)`;
-        }
-    });
-});
-</script>
 <body>
   <div class="about-container">
     <div class="about-content">
