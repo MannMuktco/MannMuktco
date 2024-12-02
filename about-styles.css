@@ -45,7 +45,7 @@ body {
 .company-name {
   font-family: 'Fredoka', sans-serif;
   color: #734327;
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 10px 0 0 0;
   padding: 0;
   text-align: left;
@@ -60,7 +60,7 @@ body {
   text-align: justify;
   margin: 20px 57px;
   width: 50%;
-  line-height: 1.5;
+  line-height: 2.0;
 }
 
 .section-title {
@@ -83,7 +83,7 @@ body {
 
 .highlight {
   color: #734327;
-  font-family: inherit;
+  font-family: 'Fredoka', sans-serif;
 }
 
 .features-list {
@@ -94,7 +94,7 @@ body {
   padding-left: 20px;
   list-style-type: disc;
   width: 50%;
-  line-height: 1.5;
+  line-height: 2.0;
 }
 
 .features-list li {
