@@ -10,28 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Playpen+Sans&display=swap" rel="stylesheet">
 </head>
- <script>
-window.addEventListener('scroll', function() {
-  const logo = document.querySelector('.floating-logo');
-  const container = document.querySelector('.about-content');
-  const textContent = document.querySelector('.text-content');
-  
-  // Get the visible portion of the container
-  const containerRect = container.getBoundingClientRect();
-  const textRect = textContent.getBoundingClientRect();
-  
-  // Calculate scroll percentage relative to text content
-  let scrollPercentage = -textRect.top / (textRect.height - window.innerHeight);
-  scrollPercentage = Math.max(0, Math.min(1, scrollPercentage));
-  
-  // Calculate the distance the logo should move
-  const maxScroll = container.offsetHeight - logo.offsetHeight - 100;
-  const newPosition = scrollPercentage * maxScroll;
-  
-  // Apply smooth transform
-  logo.style.transform = `translateY(${newPosition}px)`;
-});
-</script>
 <body>
   <div class="about-container">
     <div class="about-content">
