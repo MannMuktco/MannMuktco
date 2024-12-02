@@ -52,16 +52,16 @@ body {
 .logo-container {
   flex: 1;
   max-width: 35%;
-  position: sticky;
+  position: fixed;
   top: calc(0.8in + 40px);
-  align-self: flex-start;
-  height: fit-content;
+  right: calc(0.3in + 40px + 2%);
 }
 
 .floating-logo {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.1s linear;
 }
 
 /* Text styles */
