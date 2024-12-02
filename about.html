@@ -11,33 +11,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Playpen+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- All your existing content -->
-
-    <!-- Place script here, just before closing body tag -->
     <script>
-    window.addEventListener('scroll', () => {
-        const logo = document.querySelector('.logo-container');
-        const container = document.querySelector('.about-content');
-        const containerRect = container.getBoundingClientRect();
-        
-        // Adjust starting position to account for top space
-        const startPoint = containerRect.top + window.scrollY - 67;
-        
-        // Calculate maximum scroll distance
-        const maxScroll = container.offsetHeight - logo.offsetHeight - 200;
-        
-        // Calculate scroll position with boundaries
-        let scrollPosition = window.scrollY - startPoint;
-        scrollPosition = Math.max(0, Math.min(scrollPosition, maxScroll));
-        
-        // Only scroll when content is in view
-        if (containerRect.top < window.innerHeight && containerRect.bottom > 0) {
-            requestAnimationFrame(() => {
-                logo.style.transform = `translateY(${scrollPosition}px)`;
-            });
-        }
-    });
-    </script>
+window.addEventListener('scroll', () => {
+    const logo = document.querySelector('.logo-container');
+    const container = document.querySelector('.about-content');
+    const containerRect = container.getBoundingClientRect();
+    const containerTop = containerRect.top;
+    const containerBottom = containerRect.bottom;
+    
+    // Calculate boundaries
+    const startPoint = containerTop + window.scrollY;
+    const maxScroll = container.offsetHeight - logo.offsetHeight - 100;
+    
+    // Calculate scroll position
+    let scrollPosition = window.scrollY - startPoint;
+    scrollPosition = Math.max(0, Math.min(scrollPosition, maxScroll));
+    
+    // Apply scroll only when container is in view
+    if (containerRect.top < window.innerHeight && containerRect.bottom > 0) {
+        requestAnimationFrame(() => {
+            logo.style.transform = `translateY(${scrollPosition}px)`;
+        });
+    }
+});
+</script>
 </body>
 </html>
   <div class="about-container">
