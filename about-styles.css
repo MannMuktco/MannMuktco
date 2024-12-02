@@ -15,6 +15,11 @@ body {
   background-attachment: fixed;
 }
 
+.header {
+  position: absolute;
+  top: -47px; /* Places header in the space above border */
+}
+
 /* Container styles */
 .about-container {
   min-height: 100vh;
@@ -44,7 +49,7 @@ body {
   gap: 8px;
   position: absolute; /* Changed from fixed */
   left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in);
-  top: 0; /* Adjust this to position buttons */
+  top: 20px; /* Adjust this to position buttons */
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
   z-index: 100;
 }
