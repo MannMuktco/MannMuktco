@@ -157,11 +157,17 @@ body, html {
 }
 
 .info-box {
-    position: fixed;
-    top: calc(63px + 35px + 68px); /* Navigation top position + nav height + spacing */
+    position: absolute;
+    top: calc(63px + 35px + 68px);
     left: 68px;
     right: 68px;
     bottom: 68px;
     background-color: #1c7391;
     border-radius: 15px;
+    z-index: -1;
+}
+
+.background {
+    position: relative;
+    min-height: 100vh;
 }
