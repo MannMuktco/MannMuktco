@@ -45,9 +45,58 @@ body {
 .company-name {
   font-family: 'Fredoka', sans-serif;
   color: #734327;
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 10px 0 0 0;
   padding: 0;
   text-align: left;
   margin-left: 57px;
+}
+
+.description {
+  font-family: 'Playpen Sans', cursive;
+  color: #1c7391;
+  font-size: 1rem;
+  text-align: left;
+  text-align: justify;
+  margin: 20px 57px;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.section-title {
+  font-family: 'Playpen Sans', cursive;
+  color: #1c7391;
+  font-size: 2rem;
+  margin: 0.5in 0 0 57px;
+  padding: 0;
+  text-align: left;
+}
+
+.section-subtitle {
+  font-family: 'Fredoka', sans-serif;
+  color: #1c7391;
+  font-size: 3rem;
+  margin: 10px 0 20px 57px;
+  padding: 0;
+  text-align: left;
+}
+
+.highlight {
+  color: #734327;
+  font-family: inherit;
+}
+
+.features-list {
+  font-family: 'Playpen Sans', cursive;
+  color: #1c7391;
+  font-size: 1rem;
+  margin: 20px 57px;
+  padding-left: 20px;
+  list-style-type: disc;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.features-list li {
+  margin-bottom: 10px;
 }
