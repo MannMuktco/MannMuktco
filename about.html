@@ -29,7 +29,7 @@ window.addEventListener('scroll', function() {
   }
 });
 </script>
-  <script>
+ <script>
 let ticking = false;
 
 window.addEventListener('scroll', function() {
@@ -38,12 +38,20 @@ window.addEventListener('scroll', function() {
       const logo = document.querySelector('.floating-logo');
       const container = document.querySelector('.about-content');
       const containerRect = container.getBoundingClientRect();
-      const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
       
-      const totalDistance = container.offsetHeight - logo.offsetHeight - 200;
-      const newPosition = Math.min(totalDistance * scrollPercent, totalDistance);
+      // Get the container's top and bottom boundaries
+      const containerTop = containerRect.top;
+      const containerBottom = containerRect.bottom;
+      const windowHeight = window.innerHeight;
       
-      if (containerRect.top <= 0 && containerRect.bottom >= 0) {
+      // Calculate the maximum scroll distance
+      const maxScroll = Math.max(0, containerBottom - windowHeight - 100); // 100px buffer
+      
+      // Calculate new position
+      let newPosition = Math.max(0, Math.min(window.scrollY, maxScroll));
+      
+      // Only move logo when container is in view and not scrolled past the bottom
+      if (containerBottom > 0 && containerTop < windowHeight) {
         logo.style.transform = `translateY(${newPosition}px)`;
       }
       
