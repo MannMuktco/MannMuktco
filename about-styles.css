@@ -44,21 +44,20 @@ body {
   max-width: 60%;
 }
 
-/* Logo styles */
 .logo-container {
   flex: 1;
   max-width: 35%;
-  position: relative;
-  top: 20px; /* Distance from top while scrolling */
+  position: sticky; /* Changed from relative */
+  top: 20px;
   height: fit-content;
+  align-self: flex-start; /* Added this */
 }
 
 .floating-logo {
   width: 100%;
   height: auto;
-  position: sticky;
-  top: 40px;
-  content: url('images/logo.png'); /* Updated path to logo in images folder */
+  display: block; /* Changed from sticky */
+  content: url('images/logo.png');
 }
 
 
