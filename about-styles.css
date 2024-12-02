@@ -57,7 +57,9 @@ body {
   height: auto;
   position: sticky;
   top: 40px;
+  content: url('images/logo.png'); /* Updated path to logo in images folder */
 }
+
 
 /* Text styles */
 .about-title {
