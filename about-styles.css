@@ -49,12 +49,13 @@ body {
 .text-content {
   flex: 1;
   max-width: 60%;
+  padding-bottom: 40px;
 }
 
 .logo-container {
   position: sticky;
   position: -webkit-sticky; /* for Safari */
-  top: 0.8in; /* Match your top padding */
+  top: calc(0.8in + 40px); /* Match your top padding */
   flex: 1;
   max-width: 35%;
   align-self: flex-start;
@@ -66,6 +67,8 @@ body {
   height: auto;
   display: block;
   content: url('images/logo.png');
+  transition: transform 0.1s linear; /* Smooth transition */
+  will-change: transform; /* Performance optimization */
 }
 
 /* Text styles */
