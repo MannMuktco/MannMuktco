@@ -10,24 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Playpen+Sans&display=swap" rel="stylesheet">
 </head>
-  <script>
-  window.addEventListener('scroll', () => {
-    const textContent = document.querySelector('.text-content');
-    const logo = document.querySelector('.floating-logo');
-    const startPosition = 0.8 * 96; // 0.8 inches in pixels
-    
-    // Get scroll position relative to text content
-    const scrollPosition = window.pageYOffset;
-    const textTop = textContent.offsetTop;
-    const textBottom = textTop + textContent.offsetHeight;
-    
-    // Calculate logo position
-    if (scrollPosition >= textTop - startPosition && 
-        scrollPosition <= textBottom - window.innerHeight) {
-      logo.style.transform = `translateY(${scrollPosition - textTop + startPosition}px)`;
-    }
-  });
-</script>
 <body>
   <div class="about-container">
     <div class="about-content">
