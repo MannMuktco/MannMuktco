@@ -43,6 +43,7 @@ body, html {
   font-family: 'Fredoka';
   margin-top: 30.6px;
   text-align: center;
+  transform: translate(-20px, -5px);
 }
 
 .tagline {
@@ -61,8 +62,8 @@ body, html {
   flex-wrap: nowrap;
   gap: 8px;
   position: absolute;
-  left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in);
-  top: 71px;
+  left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in - 5px);
+  top: 63px;
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
 }
 
