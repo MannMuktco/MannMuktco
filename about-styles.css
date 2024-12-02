@@ -35,7 +35,7 @@ body {
 .about-title {
   font-family: 'Playpen Sans', cursive;
   color: #1c7391;
-  font-size: 2rem;
+  font-size: 4rem;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -45,7 +45,7 @@ body {
 .company-name {
   font-family: 'Fredoka', sans-serif;
   color: #734327;
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 10px 0 0 0;
   padding: 0;
   text-align: left;
