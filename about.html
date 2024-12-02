@@ -10,23 +10,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Playpen+Sans&display=swap" rel="stylesheet">
 </head>
-  <script>
+<script>
 document.addEventListener('scroll', () => {
     const logo = document.querySelector('.logo-container');
     const content = document.querySelector('.about-content');
     const contentRect = content.getBoundingClientRect();
-    const startOffset = 100; // Starting position from top
+    const startOffset = contentRect.top + window.scrollY;
+    const maxScroll = content.offsetHeight - logo.offsetHeight - 100;
     
-    // Only move when content is in view
-    if (contentRect.top < startOffset && contentRect.bottom > 0) {
-        const scrollProgress = -contentRect.top + startOffset;
-        const maxScroll = contentRect.height - logo.offsetHeight - startOffset;
-        const scroll = Math.min(scrollProgress, maxScroll);
-        
-        requestAnimationFrame(() => {
-            logo.style.transform = `translateY(${scroll}px)`;
-        });
-    }
+    let scrollPosition = window.scrollY - startOffset;
+    scrollPosition = Math.max(0, Math.min(scrollPosition, maxScroll));
+    
+    requestAnimationFrame(() => {
+        if (contentRect.top < window.innerHeight && contentRect.bottom > 0) {
+            logo.style.transform = `translateY(${scrollPosition}px)`;
+        }
+    });
 });
 </script>
 <body>
