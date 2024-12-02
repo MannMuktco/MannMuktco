@@ -157,12 +157,17 @@ body, html {
 }
 
 .info-box {
-  position: fixed;
-  left: 68px;
-  right: 68px;
-  bottom: 68px;
-  top: calc(71px + 35px + 68px); /* Nav top position + nav height + spacing */
+  position: absolute;
+  width: calc(100% - 136px); /* 100% minus left and right margins (68px * 2) */
+  height: calc(100vh - 242px); /* 100vh minus top(106px) and bottom(68px) margins */
+  margin: 106px 68px 68px 68px; /* top right bottom left */
   background-color: #1c7391;
   border-radius: 15px;
-  z-index: -1; /* Keep it behind other elements if needed */
+  z-index: -1;
+}
+
+/* Adjust background div to accommodate the box */
+.background {
+  position: relative;
+  min-height: 100vh;
 }
