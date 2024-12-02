@@ -53,7 +53,7 @@ body, html {
   margin-top: 8.4px;
   white-space: nowrap;
   text-align: center;
-  transform: translateX(calc(-20px - 0.1in)); 
+  transform: translateX(calc(-10px - 0.1in)); 
 }
 
 /* Navigation Buttons */
