@@ -120,7 +120,8 @@ body, html {
   border-radius: 10px;
   padding: 10px;
   backdrop-filter: blur(5px);
-  min-width: 120px;
+  width: 100%; /* Match parent button width */
+  min-width: fit-content; /* Ensure it fits the content */
 }
 
 .dropdown:hover .dropdown-content {
@@ -160,7 +161,7 @@ body, html {
   margin: 1.5in;
   padding: 0;
   position: relative;
-  top: 1.5in;
+  top: calc(1.5in + 0.5in);
 }
 
 .content-box {
