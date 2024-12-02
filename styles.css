@@ -156,4 +156,13 @@ body, html {
   transform: scale(1.1);
 }
 
-
+.info-box {
+  position: fixed;
+  left: 68px;
+  right: 68px;
+  bottom: 68px;
+  top: calc(71px + 35px + 68px); /* Nav top position + nav height + spacing */
+  background-color: #1c7391;
+  border-radius: 15px;
+  z-index: -1; /* Keep it behind other elements if needed */
+}
