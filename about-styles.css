@@ -31,6 +31,34 @@ body {
   position: relative;
 }
 
+/* Content wrapper for flex layout */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 60%;
+}
+
+/* Logo styles */
+.logo-container {
+  flex: 1;
+  max-width: 35%;
+  position: sticky;
+  top: 40px;
+  height: fit-content;
+}
+
+.floating-logo {
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 40px;
+}
+
 /* Text styles */
 .about-title {
   font-family: 'Playpen Sans', cursive;
@@ -56,10 +84,8 @@ body {
   font-family: 'Playpen Sans', cursive;
   color: #1c7391;
   font-size: 1rem;
-  text-align: left;
   text-align: justify;
   margin: 20px 57px;
-  width: 50%;
   line-height: 2.0;
 }
 
@@ -93,7 +119,6 @@ body {
   margin: 20px 57px;
   padding-left: 20px;
   list-style-type: disc;
-  width: 50%;
   line-height: 2.0;
 }
 
