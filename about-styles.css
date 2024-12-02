@@ -52,17 +52,16 @@ body {
 }
 
 .logo-container {
+  position: sticky;
+  top: 40px;
   flex: 1;
   max-width: 35%;
-  position: sticky;
-  top: 0.8in;
-  height: 100%;
+  align-self: flex-start;
 }
 
 .floating-logo {
   width: 100%;
   height: auto;
-  transition: all 0.3s ease;
   display: block;
   content: url('images/logo.png');
 }
