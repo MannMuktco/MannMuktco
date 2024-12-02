@@ -29,6 +29,31 @@ window.addEventListener('scroll', function() {
   }
 });
 </script>
+  <script>
+let ticking = false;
+
+window.addEventListener('scroll', function() {
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      const logo = document.querySelector('.floating-logo');
+      const container = document.querySelector('.about-content');
+      const containerRect = container.getBoundingClientRect();
+      const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+      
+      const totalDistance = container.offsetHeight - logo.offsetHeight - 200;
+      const newPosition = Math.min(totalDistance * scrollPercent, totalDistance);
+      
+      if (containerRect.top <= 0 && containerRect.bottom >= 0) {
+        logo.style.transform = `translateY(${newPosition}px)`;
+      }
+      
+      ticking = false;
+    });
+    
+    ticking = true;
+  }
+});
+</script>
 <body>
   <div class="about-container">
     <div class="about-content">
