@@ -16,9 +16,11 @@ body {
 }
 
 /* Container styles */
+/* Container styles */
 .about-container {
   min-height: 100vh;
   padding: 0.3in;
+  padding-top: 0.8in; /* Added 0.5in to existing 0.3in padding */
   box-sizing: border-box;
 }
 
