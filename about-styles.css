@@ -53,18 +53,18 @@ body {
 }
 
 .logo-container {
-  position: sticky;
-  top: 40px;
-  flex: 1;
-  max-width: 35%;
-  align-self: flex-start;
+    flex: 1;
+    max-width: 35%;
+    position: fixed;
+    right: calc(20% - 40px);
+    top: 100px;
+    transition: transform 0.05s linear;
 }
 
 .floating-logo {
-  width: 100%;
-  height: auto;
-  display: block;
-  content: url('images/logo.png');
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Text styles */
