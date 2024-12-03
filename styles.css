@@ -236,4 +236,105 @@ body, html {
   object-fit: contain;
 }
 
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Header adjustments */
+  .header {
+    margin-left: 20px;
+    padding: 5px 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .title-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* Navigation adjustments */
+  .navbar {
+    position: relative;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-button {
+    width: 90%;
+    max-width: none;
+  }
+
+  /* Border adjustments */
+  .header-border {
+    left: 15px;
+    right: 15px;
+    height: auto;
+  }
+
+  .page-border {
+    left: 15px;
+    right: 15px;
+    top: auto;
+  }
+
+  /* Main content adjustments */
+  .tagline-text {
+    font-size: 3rem;
+    left: 20px;
+    top: 150px;
+    width: 90%;
+  }
+
+  .home-image {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+  .tagline-text {
+    font-size: 2.5rem;
+  }
+
+  .dropdown-content {
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Overflow fixes */
+.main-box {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Touch device support */
+@media (hover: none) {
+  .nav-button:active {
+    background-color: #f7aa47;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:active .dropdown-content {
+    display: block;
+  }
+}
+
 
