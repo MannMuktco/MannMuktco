@@ -192,7 +192,7 @@ body, html {
     left: 20px;
     right: 20px;
     bottom: 20px;
-    border: 2px solid #f7aa47;
+    border: 2px solid #734327;
     border-radius: 15px;
     z-index: 2;
     pointer-events: none; /* Allows clicking through the border */
@@ -200,7 +200,7 @@ body, html {
 
 .tagline-text {
   font-family: 'Fredoka';
-  color: #734327;
+  color: #1c7391;
   font-size: 3rem;
   margin-left: 40px;
   width: 40%;
