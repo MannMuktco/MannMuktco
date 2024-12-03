@@ -177,10 +177,10 @@ body, html {
 .main-box::before {
   content: '';
   position: absolute;
-  top: 100px;
-  right: 27px;
-  bottom: 10px;
-  left: 27px;
+  top: 50px;
+  right: 20px;
+  bottom: 5px;
+  left: 20px;
   border: 2px solid #f7aa47;
   border-radius: 15px;
   z-index: -1;
