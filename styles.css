@@ -200,7 +200,7 @@ body, html {
   width: auto;
   position: absolute;
   right: 40px;
-  top: 20%;
+  top: 30%;
   transform: translateY(-50%);
   z-index: 1;
   object-fit: contain;
