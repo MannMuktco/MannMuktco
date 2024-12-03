@@ -16,6 +16,7 @@ body, html {
 
 /* Header Section */
 .header {
+  margin-top: 0.4cm; 
   display: flex;
   align-items: flex-start;
   padding: 10px 20px;
@@ -24,6 +25,22 @@ body, html {
   gap: 20px;
   position: relative;
   background: transparent;
+}
+
+.header-border {
+    position: fixed;
+    top: 0.3cm;
+    left: 35px;
+    right: 35px;
+    height: calc(63px + 35px + 50px + 0.4cm); /* Adjusted for new height */
+    border: 2px solid;
+    border-top-color: #1c7391;
+    border-left-color: #1c7391;
+    border-right-color: #1c7391;
+    border-bottom-color: #f7aa47;
+    border-radius: 15px;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .logo {
@@ -67,7 +84,7 @@ body, html {
   gap: 8px;
   position: absolute;
   left: calc(1.5cm + 110px + 1in + 244px + 20px - 0.5in - 5px + 0.5in);
-  top: 63px;
+  top: calc(63px + 0.4cm);
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
   z-index: 1000;
 }
