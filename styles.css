@@ -200,7 +200,7 @@ body, html {
   text-align: justify;
   line-height: 1.2; /* Added for better readability with justified text */
   hyphens: auto; /* Helps with text justification */
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08rem;
 }
 
 .home-image {
