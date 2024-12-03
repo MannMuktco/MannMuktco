@@ -32,7 +32,7 @@ body, html {
     top: 0.3cm;
     left: 35px;
     right: 35px;
-    height: calc(63px + 35px + 50px + 0.4cm); /* Adjusted for new height */
+    height: calc(63px + 35px + 50px + 0.4cm - 0.5cm); /* Adjusted for new height */
     border: 2px solid;
     border-top-color: #1c7391;
     border-left-color: #1c7391;
