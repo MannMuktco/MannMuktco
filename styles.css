@@ -160,47 +160,48 @@ body, html {
 
 .main-box {
   position: fixed;
-  top: 190px;
+  top: 166px;
   left: 68px;
-  width: calc(100% - 136px); /* viewport width minus left and right margins */
-  height: calc(100vh - 234px); /* viewport height minus top and bottom margins */
-  background-color: transparent;
+  right: 68px;
+  bottom: 68px;
+  background-color: #1c7391;
   border-radius: 15px;
   z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  padding: 40px;
 }
 
 .main-box::before {
- content: '';
- position: absolute;
- top: -19px;
- right: -68px;
- bottom: -68px;
- left: -19px;
- border: 2px solid #f7aa47;
- border-radius: 15px;
- z-index: -1;
+  content: '';
+  position: absolute;
+  top: -19px;
+  right: -19px;
+  bottom: -19px;
+  left: -19px;
+  border: 2px solid #f7aa47;
+  border-radius: 15px;
+  z-index: -1;
 }
 
 .tagline-text {
   font-family: 'Fredoka', sans-serif;
   color: #734327;
-  font-size: 2.5rem;
-  margin-left: 60px;
-  max-width: 40%;
+  font-size: 3rem;
+  margin-left: 40px;
+  width: 40%;
   z-index: 2;
 }
 
 .home-image {
-  height: auto;
-  width: 300%; /* Made 3 times bigger */
-  max-height: none;
+  height: 100%;
+  width: auto;
   position: absolute;
-  right: -50%; /* Position from right */
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+  object-fit: contain;
 }
