@@ -186,6 +186,18 @@ body, html {
     z-index: 999;
 }
 
+.page-border {
+    position: fixed;
+    top: calc(63px + 35px + 20px); /* Nav top position + nav height + spacing */
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 2px solid #f7aa47;
+    border-radius: 15px;
+    z-index: 2;
+    pointer-events: none; /* Allows clicking through the border */
+}
+
 .tagline-text {
   font-family: 'Fredoka';
   color: #734327;
