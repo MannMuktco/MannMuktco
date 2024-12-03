@@ -159,17 +159,6 @@ body, html {
   transform: scale(1.1);
 }
 
-.outer-box {
-    position: fixed;
-    top: 147px;  /* 166px - 19px */
-    left: 49px;  /* 68px - 19px */
-    right: 49px;  /* 68px - 19px */
-    bottom: 49px;  /* 68px - 19px */
-    border: 2px solid #f7aa47;
-    border-radius: 15px;
-    z-index: 998;
-}
-
 .main-box {
     position: absolute;
     top: 19px;
