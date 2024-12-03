@@ -166,7 +166,11 @@ body, html {
   height: calc(100vh - 234px); /* viewport height minus top and bottom margins */
   background-color: transparent;
   border-radius: 15px;
-  z-index: 999; /* Very high z-index to ensure visibility */
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
 }
 
 .main-box::before {
@@ -179,4 +183,19 @@ body, html {
  border: 2px solid #f7aa47;
  border-radius: 15px;
  z-index: -1;
+}
+
+.tagline-text {
+  font-family: 'Fredoka', sans-serif;
+  color: #734327;
+  font-size: 2.5rem;
+  margin-left: 40px;
+  max-width: 50%;
+}
+
+.home-image {
+  height: 80%;
+  max-width: 45%;
+  object-fit: contain;
+  margin-right: 40px;
 }
