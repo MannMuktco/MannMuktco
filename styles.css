@@ -159,13 +159,12 @@ body, html {
 }
 
 .main-box {
-  position: absolute;
-  top: 166px;  /* Nav height + spacing */
+  position: fixed;
+  top: 166px;
   left: 68px;
-  right: 68px;
-  bottom: 68px;
+  width: calc(100% - 136px); /* viewport width minus left and right margins */
+  height: calc(100vh - 234px); /* viewport height minus top and bottom margins */
   background-color: #1c7391;
   border-radius: 15px;
-  z-index: 1; 
-  opacity: 1; 
+  z-index: 999; /* Very high z-index to ensure visibility */
 }
