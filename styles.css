@@ -162,8 +162,6 @@ body, html {
   position: fixed;
   top: 190px;
   left: 68px;
-  right: 68px;
-  bottom: 68px;
   width: calc(100% - 136px); /* viewport width minus left and right margins */
   height: calc(100vh - 234px); /* viewport height minus top and bottom margins */
   background-color: transparent;
@@ -172,16 +170,16 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  overflow: hidden;
 }
 
 .main-box::before {
  content: '';
  position: absolute;
- top: -30px;
- right: -30px;
- bottom: -30px;
- left: -30px;
+ top: -19px;
+ right: -68px;
+ bottom: -68px;
+ left: -19px;
  border: 2px solid #f7aa47;
  border-radius: 15px;
  z-index: -1;
@@ -191,13 +189,18 @@ body, html {
   font-family: 'Fredoka', sans-serif;
   color: #734327;
   font-size: 2.5rem;
-  margin-left: 40px;
-  max-width: 50%;
+  margin-left: 60px;
+  max-width: 40%;
+  z-index: 2;
 }
 
 .home-image {
-  height: 80%;
-  max-width: 45%;
-  object-fit: contain;
-  margin-right: 40px;
+  height: auto;
+  width: 300%; /* Made 3 times bigger */
+  max-height: none;
+  position: absolute;
+  right: -50%; /* Position from right */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
