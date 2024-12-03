@@ -194,7 +194,7 @@ body, html {
   font-size: 4.5rem;
   position: absolute; /* Added for precise positioning */
   left: 60px;
-  top: 182px; /* Distance from top of the border */
+  top: 192px; /* Distance from top of the border */
   width: 45%;
   z-index: 2;
   text-align: justify;
