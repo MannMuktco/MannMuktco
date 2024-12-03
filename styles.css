@@ -158,22 +158,6 @@ body, html {
   transform: scale(1.1);
 }
 
-.main-box {
-  position: fixed;
-  top: 166px;
-  left: 68px;
-  right: 68px;
-  bottom: 68px;
-  background-color: transparent;
-  border-radius: 15px;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  padding: 40px;
-}
-
 .main-box::before {
   content: '';
   position: absolute;
