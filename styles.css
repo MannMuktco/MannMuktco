@@ -162,6 +162,8 @@ body, html {
   position: fixed;
   top: 190px;
   left: 68px;
+  right: 68px;
+  bottom: 68px;
   width: calc(100% - 136px); /* viewport width minus left and right margins */
   height: calc(100vh - 234px); /* viewport height minus top and bottom margins */
   background-color: transparent;
