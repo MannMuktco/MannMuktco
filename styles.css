@@ -206,4 +206,14 @@ body, html {
   object-fit: contain;
 }
 
+.content-border {
+  position: absolute;
+  top: 160px;
+  bottom: 27px;
+  left: 57px;
+  right: 57px;
+  border: 2px solid #f7aa47;
+  border-radius: 15px;
+  z-index: 1;
+}
 
