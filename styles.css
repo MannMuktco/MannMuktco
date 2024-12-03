@@ -157,18 +157,12 @@ body, html {
   transform: scale(1.1);
 }
 
-.blue-container {
-  position: absolute;  /* Position relative to .background */
-  width: calc(100% - 136px);  /* Full width minus left and right margins */
-  height: calc(100vh - 234px);  /* Full height minus top and bottom margins */
-  left: 68px;  /* Left margin */
-  top: calc(63px + 35px + 68px);  /* Nav position + nav height + spacing */
-}
-
-.blue-box {
-  width: 100%;
-  height: 100%;
+.main-box {
+  position: absolute;
+  top: 166px;  /* Nav height + spacing */
+  left: 68px;
+  right: 68px;
+  bottom: 68px;
   background-color: #1c7391;
   border-radius: 15px;
-  z-index: 1;  /* Ensure it's above the background */
 }
