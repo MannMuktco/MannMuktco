@@ -84,8 +84,8 @@ body, html {
   flex-wrap: nowrap;
   gap: 8px;
   position: absolute;
-  left: calc(1cm + 110px + 1in + 244px + 20px - 0.5in - 5px + 0.5in);
-  top: calc(63px + 0.4cm);
+  left: calc(0.7cm + 110px + 1in + 244px + 20px - 0.5in - 5px + 0.5in);
+  top: calc(63px + 0.2cm);
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
   z-index: 1000;
 }
