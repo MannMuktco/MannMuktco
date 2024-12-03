@@ -194,9 +194,12 @@ body, html {
   font-size: 5rem;
   position: absolute; /* Added for precise positioning */
   left: 40px;
-  top: 192px; /* Distance from top of the border */
+  top: 182px; /* Distance from top of the border */
   width: 45%;
   z-index: 2;
+  text-align: justify;
+  line-height: 1.2; /* Added for better readability with justified text */
+  hyphens: auto; /* Helps with text justification */
 }
 
 .home-image {
