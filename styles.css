@@ -206,17 +206,4 @@ body, html {
   object-fit: contain;
 }
 
-.main-box {
-  position: relative;  /* Ensure this is set for absolute positioning of inner box */
-}
 
-.transparent-box {
-  position: absolute;
-  top: 160px;
-  bottom: 27px;
-  left: 57px;
-  right: 57px;
-  background-color: rgba(247, 170, 71, 0.2); /* #f7aa47 with 20% opacity */
-  border-radius: 15px;
-  z-index: 1; /* Between the text and image */
-}
