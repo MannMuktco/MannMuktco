@@ -9,6 +9,7 @@ body, html {
   background-attachment: fixed;
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
 }
 
 /* Header Section */
@@ -157,12 +158,11 @@ body, html {
 }
 
 .blue-container {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 166px); /* Full height minus top space and bottom margin */
-  padding: 0 68px; /* Left and right spacing */
-  margin-top: 68px; /* Space below navigation */
-  box-sizing: border-box;
+  position: absolute;  /* Position relative to .background */
+  width: calc(100% - 136px);  /* Full width minus left and right margins */
+  height: calc(100vh - 234px);  /* Full height minus top and bottom margins */
+  left: 68px;  /* Left margin */
+  top: calc(63px + 35px + 68px);  /* Nav position + nav height + spacing */
 }
 
 .blue-box {
@@ -170,4 +170,5 @@ body, html {
   height: 100%;
   background-color: #1c7391;
   border-radius: 15px;
+  z-index: 1;  /* Ensure it's above the background */
 }
