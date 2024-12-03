@@ -183,7 +183,8 @@ body, html {
   left: -19px;
   border: 2px solid #f7aa47;
   border-radius: 15px;
-  z-index: -1;
+  z-index: 998; 
+  pointer-events: none; 
 }
 
 .tagline-text {
