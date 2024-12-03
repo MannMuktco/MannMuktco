@@ -177,10 +177,10 @@ body, html {
 
 .page-border {
     position: fixed;
-    top: calc(63px + 35px + 25px); /* Nav top position + nav height + spacing */
-    left: 25px;
-    right: 25px;
-    bottom: 25px;
+    top: calc(63px + 35px + 35px); /* Nav top position + nav height + spacing */
+    left: 35px;
+    right: 35px;
+    bottom: 35px;
     border: 2px solid #734327;
     border-radius: 15px;
     z-index: 2;
