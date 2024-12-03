@@ -206,8 +206,8 @@ body, html {
   height: 100%;
   width: auto;
   position: absolute;
-  right: 40px;
-  top: 50%;
+  right: 60px;
+  top: 49%;
   transform: translateY(-50%);
   z-index: 1;
   object-fit: contain;
