@@ -160,7 +160,7 @@ body, html {
 
 .main-box {
   position: fixed;
-  top: 166px;
+  top: 190px;
   left: 68px;
   width: calc(100% - 136px); /* viewport width minus left and right margins */
   height: calc(100vh - 234px); /* viewport height minus top and bottom margins */
@@ -172,10 +172,10 @@ body, html {
 .main-box::before {
  content: '';
  position: absolute;
- top: -19px;
- right: -19px;
- bottom: -19px;
- left: -19px;
+ top: -30px;
+ right: -30px;
+ bottom: -30px;
+ left: -30px;
  border: 2px solid #f7aa47;
  border-radius: 15px;
  z-index: -1;
