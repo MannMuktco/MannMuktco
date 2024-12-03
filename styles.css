@@ -182,7 +182,7 @@ body, html {
     left: 35px;
     right: 35px;
     bottom: 35px;
-    border: 2px solid #734327;
+    border: 2px solid #f7aa47;
     border-radius: 15px;
     z-index: -1;
     pointer-events: none; /* Allows clicking through the border */
@@ -190,7 +190,7 @@ body, html {
 
 .tagline-text {
   font-family: 'Fredoka';
-  color: #1c7391;
+  color: #734327;
   font-size: 3rem;
   margin-left: 40px;
   width: 40%;
@@ -202,7 +202,7 @@ body, html {
   width: auto;
   position: absolute;
   right: 40px;
-  top: 30%;
+  top: 70%;
   transform: translateY(-50%);
   z-index: 1;
   object-fit: contain;
