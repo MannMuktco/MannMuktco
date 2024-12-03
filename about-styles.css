@@ -91,6 +91,8 @@ body {
 
 .dropdown-content {
   display: none;
+  justify-content: left;
+  align-items: left;
   position: absolute;
   background-color: white;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -108,8 +110,8 @@ body {
   padding: 8px;
   text-decoration: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   border-radius: 5px;
   outline: none;
   border: none;
