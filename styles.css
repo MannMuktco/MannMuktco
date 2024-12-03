@@ -164,7 +164,7 @@ body, html {
   left: 68px;
   right: 68px;
   bottom: 68px;
-  background-color: #1c7391;
+  background-color: transparent;
   border-radius: 15px;
   z-index: 999;
   display: flex;
@@ -187,7 +187,7 @@ body, html {
 }
 
 .tagline-text {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Fredoka';
   color: #734327;
   font-size: 3rem;
   margin-left: 40px;
@@ -199,7 +199,7 @@ body, html {
   height: 100%;
   width: auto;
   position: absolute;
-  right: 0;
+  right: 40px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
