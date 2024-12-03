@@ -168,3 +168,15 @@ body, html {
   border-radius: 15px;
   z-index: 999; /* Very high z-index to ensure visibility */
 }
+
+.main-box::before {
+ content: '';
+ position: absolute;
+ top: -19px;
+ right: -19px;
+ bottom: -19px;
+ left: -19px;
+ border: 2px solid #f7aa47;
+ border-radius: 15px;
+ z-index: -1;
+}
