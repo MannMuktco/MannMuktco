@@ -211,7 +211,7 @@ body, html {
 }
 
 .tagline-text {
-  font-family: 'Playpen Sans', sans-serif; /* Added sans-serif fallback */
+  font-family: 'Fredoka', sans-serif; /* Added sans-serif fallback */
   color: #734327;
   font-size: 4.5rem;
   position: absolute; /* Added for precise positioning */
