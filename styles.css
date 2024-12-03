@@ -178,7 +178,7 @@ body, html {
 
 .page-border {
     position: fixed;
-    top: calc(63px + 35px + 35px); /* Nav top position + nav height + spacing */
+    top: calc(63px + 35px + 50px); /* Nav top position + nav height + spacing */
     left: 35px;
     right: 35px;
     bottom: 35px;
@@ -193,7 +193,7 @@ body, html {
   color: #734327;
   font-size: 5rem;
   position: absolute; /* Added for precise positioning */
-  left: 40px;
+  left: 60px;
   top: 182px; /* Distance from top of the border */
   width: 45%;
   z-index: 2;
