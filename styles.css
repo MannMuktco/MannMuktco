@@ -189,10 +189,12 @@ body, html {
 }
 
 .tagline-text {
-  font-family: 'Fredoka';
+  font-family: 'Fredoka', sans-serif; /* Added sans-serif fallback */
   color: #734327;
-  font-size: 3rem;
-  margin-left: 40px;
+  font-size: 5rem;
+  position: absolute; /* Added for precise positioning */
+  left: 40px;
+  top: 96px; /* Distance from top of the border */
   width: 40%;
   z-index: 2;
 }
