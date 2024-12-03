@@ -10,6 +10,7 @@ body, html {
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
+  z-index: 0;
 }
 
 /* Header Section */
@@ -165,4 +166,6 @@ body, html {
   bottom: 68px;
   background-color: #1c7391;
   border-radius: 15px;
+  z-index: 1; 
+  opacity: 1; 
 }
