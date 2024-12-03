@@ -199,7 +199,7 @@ body, html {
     top: calc(63px + 35px + 50px); /* Nav top position + nav height + spacing */
     left: 35px;
     right: 35px;
-    bottom: 35px;
+    bottom: 30px;
     border: 2px solid #f7aa47;
     border-radius: 15px;
     z-index: -1;
