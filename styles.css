@@ -215,7 +215,7 @@ body, html {
   color: #734327;
   font-size: 2rem;
   position: absolute; /* Added for precise positioning */
-  left: 825.8px;
+  left: 835.8px;
   top: 510.81px; /* Distance from top of the border */
   z-index: 2;
   text-align: justify;
@@ -229,8 +229,8 @@ body, html {
   color: #734327;
   font-size: 2rem;
   position: absolute; /* Added for precise positioning */
-  left: 982.6px;
-  top: 498.81px; /* Distance from top of the border */
+  left: 1000.6px;
+  top: 510.81px; /* Distance from top of the border */
   z-index: 2;
   text-align: justify;
   line-height: 1; /* Added for better readability with justified text */
