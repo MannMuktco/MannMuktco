@@ -54,5 +54,47 @@
     <div class="outer-box">
     </div>
 </div>
+  const mainBox = document.querySelector('.main-box');
+let currentPage = 1;
+let hasMorePages = true;
+
+mainBox.addEventListener('scroll', () => {
+  if (mainBox.scrollTop + mainBox.clientHeight >= mainBox.scrollHeight && hasMorePages) {
+    loadNextPage();
+  }
+});
+
+function loadNextPage() {
+  // Fetch data for the next page
+  fetch(`/api/data?page=${currentPage + 1}`)
+    .then(response => response.json())
+    .then(data => {
+      // Update the content on the page with the new data
+      updatePageContent(data);
+      currentPage++;
+      
+      // Check if there are more pages to load
+      hasMorePages = data.length > 0;
+      
+      // Smoothly scroll to the top of the new content
+      mainBox.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    })
+    .catch(error => {
+      console.error('Error loading next page:', error);
+    });
+}
+
+function updatePageContent(data) {
+  // Update the content on the page with the new data
+  // For example, append new elements to the DOM
+  data.forEach(item => {
+    const newElement = document.createElement('div');
+    newElement.textContent = item.content;
+    mainBox.appendChild(newElement);
+  });
+}
 </body>
 </html>
