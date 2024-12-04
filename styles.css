@@ -227,7 +227,7 @@ body, html {
   color: #734327;
   font-size: 2rem;
   position: absolute !important; /* Added for precise positioning */
-  left: 840.8px !important;
+  right: 1080.6px !important;
   top: 510.81px !important; /* Distance from top of the border */
   z-index: 2;
   text-align: center;
