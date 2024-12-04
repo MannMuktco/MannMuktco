@@ -309,7 +309,7 @@ body, html {
 
   .home-image {
     position: relative;
-    right: auto;
+    right: 50%;
     top: auto;
     width: 90%;
     height: auto;
