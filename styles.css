@@ -240,7 +240,8 @@ body, html {
 .home-image {
   height: 96%;
   width: auto;
-  position: absolute;
+  max-width: 50%;
+  position: relative;
   right: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
