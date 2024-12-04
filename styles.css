@@ -209,6 +209,8 @@ body, html {
     background-repeat: no-repeat;
 }
 
+
+
 .tagline-text {
   font-family: 'Fredoka', sans-serif; /* Added sans-serif fallback */
   color: #734327;
@@ -237,17 +239,6 @@ body, html {
   letter-spacing: 0.09rem;
 }
 
-.home-image {
-  height: 96%;
-  width: auto;
-  max-width: 50%;
-  position: relative;
-  right: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  object-fit: contain;
-}
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
