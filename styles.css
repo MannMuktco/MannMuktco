@@ -216,7 +216,7 @@ body, html {
   font-size: 2rem;
   position: absolute; /* Added for precise positioning */
   left: 774.8px;
-  top: 478.81px; /* Distance from top of the border */
+  top: 498.81px; /* Distance from top of the border */
   z-index: 2;
   text-align: justify;
   line-height: 1; /* Added for better readability with justified text */
@@ -230,7 +230,7 @@ body, html {
   font-size: 2rem;
   position: absolute; /* Added for precise positioning */
   left: 982.6px;
-  top: 478.81px; /* Distance from top of the border */
+  top: 498.81px; /* Distance from top of the border */
   z-index: 2;
   text-align: justify;
   line-height: 1; /* Added for better readability with justified text */
