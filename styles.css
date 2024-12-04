@@ -178,7 +178,7 @@ body, html {
 }
 
 .main-box {
-    position: absolute;
+    position: relative;
     top: 19px;
     left: 19px;
     right: 19px;
