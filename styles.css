@@ -215,7 +215,7 @@ body, html {
   color: #734327;
   font-size: 2rem;
   position: absolute; /* Added for precise positioning */
-  left: 814.8px;
+  left: 864.8px;
   top: 498.81px; /* Distance from top of the border */
   z-index: 2;
   text-align: justify;
