@@ -238,11 +238,11 @@ body, html {
 }
 
 .home-image {
-  height: 90%;
+  height: 96%;
   width: auto;
   position: absolute;
   right: 60px;
-  top: 38%;
+  top: 42%;
   transform: translateY(-50%);
   z-index: 1;
   object-fit: contain;
