@@ -213,9 +213,9 @@ body, html {
   font-family: 'Fredoka', sans-serif; /* Added sans-serif fallback */
   color: #734327;
   font-size: 2rem;
-  position: relative; /* Added for precise positioning */
-  left: 845.8px;
-  top: 510.81px; /* Distance from top of the border */
+  position: absolute !important; /* Added for precise positioning */
+  left: 845.8px !important;
+  top: 510.81px !important; /* Distance from top of the border */
   z-index: 2;
   text-align: justify;
   line-height: 1; /* Added for better readability with justified text */
