@@ -1,4 +1,3 @@
-
 /* General Styling */
 body, html {
   margin: 0;
@@ -215,7 +214,7 @@ body, html {
   color: #734327;
   font-size: 2rem;
   position: absolute; /* Added for precise positioning */
-  left: 855.8px;
+  left: 875.8px;
   top: 510.81px; /* Distance from top of the border */
   z-index: 2;
   text-align: justify;
