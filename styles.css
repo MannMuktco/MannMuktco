@@ -215,12 +215,25 @@ body, html {
   color: #734327;
   font-size: 2rem;
   position: absolute; /* Added for precise positioning */
-  left: 50px;
-  top: 160px; /* Distance from top of the border */
-  width: 45%;
+  left: 774.8px;
+  top: 461px; /* Distance from top of the border */
   z-index: 2;
   text-align: justify;
-  line-height: 1.2; /* Added for better readability with justified text */
+  line-height: 1; /* Added for better readability with justified text */
+  hyphens: auto; /* Helps with text justification */
+  letter-spacing: 0.09rem;
+}
+
+.tag-text {
+  font-family: 'Fredoka', sans-serif; /* Added sans-serif fallback */
+  color: #734327;
+  font-size: 2rem;
+  position: absolute; /* Added for precise positioning */
+  left: 982.6px;
+  top: 461px; /* Distance from top of the border */
+  z-index: 2;
+  text-align: justify;
+  line-height: 1; /* Added for better readability with justified text */
   hyphens: auto; /* Helps with text justification */
   letter-spacing: 0.09rem;
 }
