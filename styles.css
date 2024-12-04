@@ -355,6 +355,7 @@ body, html {
     left: 840.8px !important;
     top: 510.81px !important;
     animation: slideFromLeft 0.8s ease-out forwards;
+    font-weight: bold; 
 }
 
 .tag-text {
@@ -364,6 +365,7 @@ body, html {
     top: 510.81px;
     animation: slideFromRight 0.8s ease-out forwards;
     animation-delay: 0.3s; /* Slight delay for second part */
+    font-weight: bold; 
 }
 
 @keyframes slideFromLeft {
