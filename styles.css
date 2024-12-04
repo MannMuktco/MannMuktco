@@ -241,7 +241,7 @@ body, html {
   height: 96%;
   width: auto;
   position: absolute;
-  right: 437px;
+  right: (437px + 0.3cm);
   top: 40%;
   transform: translateY(-50%);
   z-index: 1;
