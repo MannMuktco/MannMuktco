@@ -349,4 +349,42 @@ body, html {
   }
 }
 
+.tagline-text {
+    opacity: 0;
+    position: absolute !important;
+    left: 840.8px !important;
+    top: 510.81px !important;
+    animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.tag-text {
+    opacity: 0;
+    position: absolute;
+    left: 1080.6px;
+    top: 510.81px;
+    animation: slideFromRight 0.8s ease-out forwards;
+    animation-delay: 0.3s; /* Slight delay for second part */
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
