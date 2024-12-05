@@ -240,10 +240,10 @@ body, html {
   width: auto;
   position: absolute;
   top: 42%;
+  right: 10%;
   transform: translateY(-50%);
   z-index: 1;
   object-fit: contain;
-  left: calc(50% + 1.3cm);
 }
 
 .tagline-text {
