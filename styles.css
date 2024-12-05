@@ -290,25 +290,6 @@ body, html {
     }
 }
 
-.home-image-container {
-    position: relative;
-    height: 96%;
-    width: auto;
-    position: absolute;
-    top: 42%;
-    transform: translateY(-50%);
-    left: calc(50% + 1.3cm);
-}
-
-.thread-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
 @keyframes threadDraw {
     0% {
         stroke-dashoffset: 100;
