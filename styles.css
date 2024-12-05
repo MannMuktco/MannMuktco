@@ -4,9 +4,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  min-height: calc(100vh + 20cm);
-  height: auto;
-  overflow-y: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
   position: relative;
   z-index: 0;
   background-color: #1c7391;
@@ -185,32 +184,31 @@ body, html {
     top: 19px;
     left: 19px;
     right: 19px;
-    min-height: calc(100vh + 19cm);
+    bottom: 19px;
     background-color: transparent;
     border-radius: 15px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     padding: 40px;
     z-index: 999;
 }
 
 .page-border {
-    position: absolute;
+    position: fixed;
     top: calc(63px + 35px + 50px); /* Nav top position + nav height + spacing */
     left: 35px;
     right: 35px;
-    min-height: calc(100vh + 20cm); /* Existing height plus 20cm */
+    bottom: 30px;
     border: 2px solid #f7aa47;
     border-radius: 15px;
     z-index: -1;
     pointer-events: none; /* Allows clicking through the border */
     background-image: url('images/background.png');
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .home-image {
