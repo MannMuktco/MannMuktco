@@ -262,7 +262,7 @@ body, html {
     }
     100% {
         opacity: 1;
-        left: 22%;
+        left: 24%;
     }
 }
 
@@ -273,6 +273,6 @@ body, html {
     }
     100% {
         opacity: 1;
-        right: 22%;
+        right: 24%;
     }
 }
