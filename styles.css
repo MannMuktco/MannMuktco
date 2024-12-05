@@ -214,17 +214,17 @@ body, html {
 
 /* Add new button styles */
 .schedule-button {
- font-family: 'Fredoka', sans-serif;
+ font-family: 'Playpen Sans', sans-serif;
  font-size: 2rem;
  font-weight: bold;
  padding: 10px 30px;
  border-radius: 15px;
  background-color: #f7aa47;
- color: #734327;
+ color: #black;
  border: none;
  position: absolute;
- bottom: 0.5cm;
- left: calc(9.5% + 3.15cm); /* Center in left half */
+ bottom: 0.2cm;
+ left: calc(6.5% + 3.15cm); /* Center in left half */
  cursor: pointer;
  z-index: 2;
  transition: all 0.3s ease;
