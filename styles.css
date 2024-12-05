@@ -253,7 +253,6 @@ body, html {
   opacity: 0;
   font-weight: bold;
   animation: slideFromBottom 1.3s ease-out forwards;
-  animation-delay: 0.3s;
 }
 
 @keyframes slideFromBottom {
