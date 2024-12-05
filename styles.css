@@ -118,6 +118,7 @@ body, html {
 
 .nav-button:hover {
   background-color: #f7aa47;
+  color: #734327;
   transition: 0.3s;
 }
 
