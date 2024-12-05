@@ -219,7 +219,7 @@ body, html {
   transform: translateY(-50%);
   z-index: 1;
   object-fit: contain;
-  left: calc(58% + 1.3cm);
+  left: calc(50% + 1.3cm);
 }
 
 
@@ -228,7 +228,7 @@ body, html {
   color: #734327;
   font-size: 2.5rem;
   position: absolute !important; /* Added for precise positioning */
-  left: calc(25% + 8cm);
+  left: calc(25% + 7.5cm);
   bottom: 0.6cm;
   z-index: 2;
   text-align: center;
@@ -244,7 +244,7 @@ body, html {
   color: #734327;
   font-size: 2.5rem;
   position: absolute; /* Added for precise positioning */
-  right: calc(24.5% - 8cm);
+  right: calc(24.5% - 7.5cm);
   bottom: 0.6cm;
   z-index: 2;
   text-align: center;
