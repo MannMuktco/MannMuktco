@@ -235,7 +235,7 @@ body, html {
   letter-spacing: 0.09rem;
   opacity: 0;
   font-weight: bold;
-  animation: slideFromLeft 1.5s ease-out forwards;
+  animation: slideFromLeft 1.7s ease-out forwards;
 }
 
 .tag-text {
@@ -251,7 +251,7 @@ body, html {
   letter-spacing: 0.09rem;
   opacity: 0;
   font-weight: bold;
-  animation: slideFromRight 1.5s ease-out forwards;
+  animation: slideFromRight 1.7s ease-out forwards;
   animation-delay: 0.3s;
 }
 
@@ -262,7 +262,7 @@ body, html {
     }
     100% {
         opacity: 1;
-        left: 24%;
+        left: 24.5%;
     }
 }
 
@@ -273,6 +273,6 @@ body, html {
     }
     100% {
         opacity: 1;
-        right: 24%;
+        right: 24.5%;
     }
 }
