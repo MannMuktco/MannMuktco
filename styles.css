@@ -289,22 +289,3 @@ body, html {
     }
 }
 
-@keyframes threadDraw {
-    0% {
-        stroke-dashoffset: 100;
-        opacity: 0;
-    }
-    100% {
-        stroke-dashoffset: 0;
-        opacity: 1;
-    }
-}
-
-.animated-thread {
-    stroke: #f7aa47;
-    stroke-width: 2;
-    fill: none;
-    stroke-dasharray: 100;
-    stroke-dashoffset: 100;
-    animation: threadDraw 1.5s ease-in-out forwards;
-}
