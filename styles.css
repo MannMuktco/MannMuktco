@@ -220,11 +220,11 @@ body, html {
  padding: 10px 30px;
  border-radius: 15px;
  background-color: #f7aa47;
- color: #f7aa47;
+ color: #734327;
  border: none;
  position: absolute;
  bottom: 0.2cm;
- left: calc(4% + 3.15cm); /* Center in left half */
+ left: calc(4% + 2.15cm); /* Center in left half */
  cursor: pointer;
  z-index: 2;
  transition: all 0.3s ease;
