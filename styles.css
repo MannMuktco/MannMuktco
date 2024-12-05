@@ -290,4 +290,36 @@ body, html {
     }
 }
 
+.home-image-container {
+    position: relative;
+}
 
+.thread-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+@keyframes threadDraw {
+    0% {
+        stroke-dashoffset: 100;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+.animated-thread {
+    stroke: #f7aa47;
+    stroke-width: 2;
+    fill: none;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: threadDraw 1.5s ease-in-out forwards;
+}
