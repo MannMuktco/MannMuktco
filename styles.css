@@ -217,8 +217,8 @@ body, html {
  font-weight: bold;
  padding: 10px 40px;
  border-radius: 15px;
- background-image: linear-gradient(to right, #e08f3e, #ff9d3d);
- color: white;
+ background-image: linear-gradient(to right, #145669, #2d7d98);
+ color: ffffff;
  border: none;
  position: absolute;
  bottom: 0.2cm;
@@ -230,7 +230,7 @@ body, html {
 }
 
 .schedule-button:hover {
- background-image: linear-gradient(to right, #145669, #2d7d98);
+ background-image: linear-gradient(to right, #ff6b00, #ff8c00);
  color: white;
 }
 
