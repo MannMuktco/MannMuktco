@@ -244,7 +244,7 @@ body, html {
   color: #734327;
   font-size: 2.5rem;
   position: absolute; /* Added for precise positioning */
-  right: calc(24.5% - 6cm);
+  right: calc(24.5% - 4cm);
   bottom: 0.6cm;
   z-index: 2;
   text-align: center;
