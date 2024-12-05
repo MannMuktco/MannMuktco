@@ -255,6 +255,29 @@ body, html {
   animation: slideFromBottom 1.3s ease-out forwards;
 }
 
+/* Add new button styles */
+.schedule-button {
+ font-family: 'Fredoka', sans-serif;
+ font-size: 2.5rem;
+ font-weight: bold;
+ padding: 10px 30px;
+ border-radius: 15px;
+ background-color: #f7aa47;
+ color: #734327;
+ border: none;
+ position: absolute;
+ bottom: 1.6cm;
+ left: calc(12.5% + 3.15cm); /* Center in left half */
+ cursor: pointer;
+ z-index: 2;
+ transition: all 0.3s ease;
+}
+
+.schedule-button:hover {
+ background-color: #1c7391;
+ color: white;
+}
+
 @keyframes slideFromBottom {
     0% {
         opacity: 0;
