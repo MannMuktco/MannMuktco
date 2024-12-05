@@ -216,11 +216,10 @@ body, html {
   width: auto;
   position: absolute;
   top: 42%;
-  transform: translateX(-50%);
   transform: translateY(-50%);
   z-index: 1;
   object-fit: contain;
-  left: (65% + 6.3cm);
+  left: calc(65% + 6.3cm);
 }
 
 
@@ -229,15 +228,15 @@ body, html {
   color: #734327;
   font-size: 2.5rem;
   position: absolute !important; /* Added for precise positioning */
-  left: calc(0.5cm); /* Start position */
-  top: 535.81px !important; /* Distance from top of the border */
+  left: calc(25% + 6.3cm);
+  bottom: 1.6cm;
   z-index: 2;
   text-align: center;
   line-height: 1; /* Added for better readability with justified text */
   letter-spacing: 0.09rem;
   opacity: 0;
   font-weight: bold;
-  animation: slideFromLeft 1.5s ease-out forwards;
+  animation: slideFromBottom 1.5s ease-out forwards;
 }
 
 .tag-text {
@@ -245,36 +244,25 @@ body, html {
   color: #734327;
   font-size: 2.5rem;
   position: absolute; /* Added for precise positioning */
-  right: calc(0.5cm); /* Start position */
-  top: 535.81px; /* Distance from top of the border */
+  right: calc(24.5% - 6.3cm);
+  bottom: 1.6cm;
   z-index: 2;
   text-align: center;
   line-height: 1; /* Added for better readability with justified text */
   letter-spacing: 0.09rem;
   opacity: 0;
   font-weight: bold;
-  animation: slideFromRight 1.5s ease-out forwards;
+  animation: slideFromBottom 1.5s ease-out forwards;
   animation-delay: 0.3s;
 }
 
-@keyframes slideFromLeft {
+@keyframes slideFromBottom {
     0% {
         opacity: 0;
-        left: calc(0.5cm);
+        transform: translateY(50px);
     }
     100% {
         opacity: 1;
-        left: 25%;
-    }
-}
-
-@keyframes slideFromRight {
-    0% {
-        opacity: 0;
-        right: calc(0.5cm);
-    }
-    100% {
-        opacity: 1;
-        right: 24.5%;
+        transform: translateY(0);
     }
 }
