@@ -197,10 +197,10 @@ body, html {
 
 .page-border {
     position: fixed;
-    top: calc(63px + 45px + 50px); /* Nav top position + nav height + spacing */
+    top: calc(63px + 55px + 50px); /* Nav top position + nav height + spacing */
     left: 35px;
     right: 35px;
-    bottom: 20px;
+    bottom: 15px;
     border: 2px solid #f7aa47;
     border-radius: 15px;
     z-index: -1;
@@ -215,7 +215,7 @@ body, html {
   height: 96%;
   width: auto;
   position: absolute;
-  top: 40%;
+  top: 42%;
   transform: translateX(-50%);
   transform: translateY(-50%);
   z-index: 1;
@@ -230,7 +230,7 @@ body, html {
   font-size: 2.5rem;
   position: absolute !important; /* Added for precise positioning */
   left: calc(0.5cm); /* Start position */
-  top: 520.81px !important; /* Distance from top of the border */
+  top: 535.81px !important; /* Distance from top of the border */
   z-index: 2;
   text-align: center;
   line-height: 1; /* Added for better readability with justified text */
@@ -246,7 +246,7 @@ body, html {
   font-size: 2.5rem;
   position: absolute; /* Added for precise positioning */
   right: calc(0.5cm); /* Start position */
-  top: 520.81px; /* Distance from top of the border */
+  top: 535.81px; /* Distance from top of the border */
   z-index: 2;
   text-align: center;
   line-height: 1; /* Added for better readability with justified text */
