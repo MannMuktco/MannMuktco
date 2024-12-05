@@ -20,7 +20,7 @@ body, html {
   margin-left: calc(1.5cm - 0.5in);
   flex-wrap: wrap;
   gap: 20px;
-  position: relative;
+  position: fixed;
   background: transparent;
 }
 
@@ -48,6 +48,7 @@ body, html {
   height: 100px;
   margin-right: 10px;
   margin-left: 10px;
+  position: fixed;
 }
 
 /* Title Section */
@@ -56,6 +57,7 @@ body, html {
   flex-direction: column;
   margin-right: 0.5in;
   align-items: center;
+  position: fixed;
 }
 
 .title {
@@ -66,6 +68,7 @@ body, html {
   margin-top: 30.6px;
   text-align: center;
   transform: translate(-20px, -5px);
+  position: fixed;
 }
 
 .tagline {
@@ -76,6 +79,7 @@ body, html {
   white-space: nowrap;
   text-align: center;
   transform: translateX(calc(-6px - 0.1in)); 
+  position: fixed;
 }
 
 /* Navigation Buttons */
@@ -84,7 +88,7 @@ body, html {
   align-items: center;
   flex-wrap: nowrap;
   gap: 8px;
-  position: absolute;
+  position: fixed;
   left: calc(0.7cm + 110px + 1in + 244px + 20px - 0.5in - 5px + 0.5in);
   top: calc(63px + 0.2cm);
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
@@ -114,6 +118,7 @@ body, html {
   overflow: hidden;
   text-overflow: ellipsis;
   color: white;
+  position: fixed;
 }
 
 .nav-button:hover {
@@ -196,7 +201,7 @@ body, html {
 }
 
 .page-border {
-    position: fixed;
+    position: absolute;
     top: calc(63px + 35px + 50px); /* Nav top position + nav height + spacing */
     left: 35px;
     right: 35px;
@@ -215,8 +220,8 @@ body, html {
 
 .home-image {
   height: 96%;
-  width: absolute;
-  position: absolute;
+  width: fixed;
+  position: fixed;
   top: 40%;
   transform: translateX(-50%);
   transform: translateY(-50%);
@@ -230,7 +235,7 @@ body, html {
   font-family: 'Fredoka', sans-serif; /* Added sans-serif fallback */
   color: #734327;
   font-size: 2.5rem;
-  position: absolute !important; /* Added for precise positioning */
+  position: fixed !important; /* Added for precise positioning */
   left: calc(0.5cm); /* Start position */
   top: 520.81px !important; /* Distance from top of the border */
   z-index: 2;
@@ -246,7 +251,7 @@ body, html {
   font-family: 'Fredoka', sans-serif; /* Added sans-serif fallback */
   color: #734327;
   font-size: 2.5rem;
-  position: absolute; /* Added for precise positioning */
+  position: fixed; /* Added for precise positioning */
   right: calc(0.5cm); /* Start position */
   top: 520.81px; /* Distance from top of the border */
   z-index: 2;
