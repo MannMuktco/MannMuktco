@@ -223,8 +223,8 @@ body, html {
  color: #734327;
  border: none;
  position: absolute;
- bottom: 1cm;
- left: calc(12.5% + 3.15cm); /* Center in left half */
+ bottom: 0.5cm;
+ left: calc(9.5% + 3.15cm); /* Center in left half */
  cursor: pointer;
  z-index: 2;
  transition: all 0.3s ease;
