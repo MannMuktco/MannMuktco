@@ -31,9 +31,9 @@ body, html {
     right: 35px;
     height: calc(63px + 35px + 50px + 0.4cm - 0.7cm); /* Adjusted for new height */
     border: 2px solid;
-    border-top-color: #1c7391;
-    border-left-color: #1c7391;
-    border-right-color: #1c7391;
+    border-top-color: #f7aa47;
+    border-left-color: #f7aa47;
+    border-right-color: #f7aa47;
     border-bottom-color: #f7aa47;
     border-radius: 15px;
     z-index: -1;
