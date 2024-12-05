@@ -230,7 +230,7 @@ body, html {
   left: 49% !important;
   top: 510.81px !important; /* Distance from top of the border */
   z-index: 2;
-  text-align: center;
+  text-align: left;
   line-height: 1; /* Added for better readability with justified text */
   hyphens: auto; /* Helps with text justification */
   letter-spacing: 0.09rem;
@@ -246,7 +246,7 @@ body, html {
   right: 48%;
   top: 510.81px; /* Distance from top of the border */
   z-index: 2;
-  text-align: center;
+  text-align: right;
   line-height: 1; /* Added for better readability with justified text */
   hyphens: auto; /* Helps with text justification */
   letter-spacing: 0.09rem;
