@@ -85,7 +85,7 @@ body, html {
   flex-wrap: nowrap;
   gap: 8px;
   position: absolute;
-  left: calc(0.7cm + 110px + 1in + 244px + 20px - 0.5in - 5px + 0.5in);
+  left: calc(0.7cm + 110px + 1.5in + 244px + 20px - 0.5in - 5px + 0.5in);
   top: calc(63px + 0.2cm);
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
   z-index: 1000;
@@ -106,7 +106,7 @@ body, html {
   flex: 0 1 auto;
   min-width: 60px;
   max-width: 150px;
-  font-size: 0.75rem;
+  font-size: 1rem;
   outline: none;
   border: none;
   box-sizing: border-box;
@@ -220,7 +220,7 @@ body, html {
  padding: 10px 30px;
  border-radius: 15px;
  background-color: #f7aa47;
- color: #black;
+ color: #000000;
  border: none;
  position: absolute;
  bottom: 0.2cm;
