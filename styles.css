@@ -220,7 +220,7 @@ body, html {
   transform: translateY(-50%);
   z-index: 1;
   object-fit: contain;
-  right: 35%;
+  left: (65% + 6.3cm);
 }
 
 
