@@ -290,3 +290,38 @@ body, html {
         transform: translateY(0);
     }
 }
+
+/* Create a separate SVG path for the thread */
+.connecting-thread {
+    position: absolute;
+    stroke: #f7aa47;
+    stroke-width: 2;
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawThread 2s ease-out forwards;
+    z-index: 3;
+}
+
+@keyframes drawThread {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Add pulsing effect to the thread */
+.thread-pulse {
+    animation: threadPulse 2s infinite ease-in-out;
+}
+
+@keyframes threadPulse {
+    0%, 100% {
+        stroke-opacity: 1;
+    }
+    50% {
+        stroke-opacity: 0.6;
+    }
+}
