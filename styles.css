@@ -259,6 +259,27 @@ body, html {
   animation-delay: 0.3s;
 }
 
+/* Container for the three boxes */
+.info-boxes {
+    position: absolute;
+    top: calc(520.81px + 80px); /* Below the tagline text */
+    left: 2cm;
+    right: 2cm;
+    height: 1.5in;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5cm;
+    z-index: 2;
+}
+
+/* Individual box style */
+.info-box {
+    width: 6cm;
+    height: 100%;
+    background-color: #1c7391;
+    border-radius: 15px;
+}
+
 @keyframes slideFromLeft {
     0% {
         opacity: 0;
