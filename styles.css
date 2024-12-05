@@ -4,8 +4,9 @@
 body, html {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  overflow-x: auto;
+  min-height: calc(100vh + 20cm);
+  height: auto;
+  overflow-y: auto;
   position: relative;
   z-index: 0;
   background-color: #1c7391;
@@ -20,7 +21,7 @@ body, html {
   margin-left: calc(1.5cm - 0.5in);
   flex-wrap: wrap;
   gap: 20px;
-  position: fixed;
+  position: relative;
   background: transparent;
 }
 
@@ -48,7 +49,6 @@ body, html {
   height: 100px;
   margin-right: 10px;
   margin-left: 10px;
-  position: fixed;
 }
 
 /* Title Section */
@@ -57,7 +57,6 @@ body, html {
   flex-direction: column;
   margin-right: 0.5in;
   align-items: center;
-  position: fixed;
 }
 
 .title {
@@ -68,7 +67,6 @@ body, html {
   margin-top: 30.6px;
   text-align: center;
   transform: translate(-20px, -5px);
-  position: fixed;
 }
 
 .tagline {
@@ -79,7 +77,6 @@ body, html {
   white-space: nowrap;
   text-align: center;
   transform: translateX(calc(-6px - 0.1in)); 
-  position: fixed;
 }
 
 /* Navigation Buttons */
@@ -88,7 +85,7 @@ body, html {
   align-items: center;
   flex-wrap: nowrap;
   gap: 8px;
-  position: fixed;
+  position: absolute;
   left: calc(0.7cm + 110px + 1in + 244px + 20px - 0.5in - 5px + 0.5in);
   top: calc(63px + 0.2cm);
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
@@ -118,7 +115,6 @@ body, html {
   overflow: hidden;
   text-overflow: ellipsis;
   color: white;
-  position: fixed;
 }
 
 .nav-button:hover {
@@ -189,13 +185,13 @@ body, html {
     top: 19px;
     left: 19px;
     right: 19px;
-    bottom: 19px;
+    min-height: calc(100vh + 19cm);
     background-color: transparent;
     border-radius: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
     padding: 40px;
     z-index: 999;
 }
@@ -205,23 +201,22 @@ body, html {
     top: calc(63px + 35px + 50px); /* Nav top position + nav height + spacing */
     left: 35px;
     right: 35px;
-    bottom: 30px;
+    min-height: calc(100vh + 20cm); /* Existing height plus 20cm */
     border: 2px solid #f7aa47;
     border-radius: 15px;
     z-index: -1;
     pointer-events: none; /* Allows clicking through the border */
     background-image: url('images/background.png');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    overflow-x: auto;
-
+    background-attachment: fixed;
 }
 
 .home-image {
   height: 96%;
-  width: fixed;
-  position: fixed;
+  width: auto;
+  position: absolute;
   top: 40%;
   transform: translateX(-50%);
   transform: translateY(-50%);
@@ -235,7 +230,7 @@ body, html {
   font-family: 'Fredoka', sans-serif; /* Added sans-serif fallback */
   color: #734327;
   font-size: 2.5rem;
-  position: fixed !important; /* Added for precise positioning */
+  position: absolute !important; /* Added for precise positioning */
   left: calc(0.5cm); /* Start position */
   top: 520.81px !important; /* Distance from top of the border */
   z-index: 2;
@@ -251,7 +246,7 @@ body, html {
   font-family: 'Fredoka', sans-serif; /* Added sans-serif fallback */
   color: #734327;
   font-size: 2.5rem;
-  position: fixed; /* Added for precise positioning */
+  position: absolute; /* Added for precise positioning */
   right: calc(0.5cm); /* Start position */
   top: 520.81px; /* Distance from top of the border */
   z-index: 2;
@@ -262,27 +257,6 @@ body, html {
   font-weight: bold;
   animation: slideFromRight 1.5s ease-out forwards;
   animation-delay: 0.3s;
-}
-
-/* Container for the three boxes */
-.info-boxes {
-    position: absolute;
-    top: calc(520.81px + 80px); /* Below the tagline text */
-    left: 2cm;
-    right: 2cm;
-    height: 1.5in;
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5cm;
-    z-index: 2;
-}
-
-/* Individual box style */
-.info-box {
-    width: 6cm;
-    height: 100%;
-    background-color: #1c7391;
-    border-radius: 15px;
 }
 
 @keyframes slideFromLeft {
