@@ -106,7 +106,7 @@ body, html {
   flex: 0 1 auto;
   min-width: 60px;
   max-width: 160px;
-  font-size: 1rem;
+  font-size: 0.90rem;
   outline: none;
   border: none;
   box-sizing: border-box;
@@ -161,7 +161,7 @@ body, html {
   border-radius: 5px;
   color: white;
   font-family: 'Playpen Sans';
-  font-size: 1rem;
+  font-size: 0.90rem;
 }
 
 .contact-icon {
@@ -220,11 +220,11 @@ body, html {
  padding: 10px 30px;
  border-radius: 15px;
  background-color: #f7aa47;
- color: #000000;
+ color: #f7aa47;
  border: none;
  position: absolute;
  bottom: 0.2cm;
- left: calc(4.5% + 3.15cm); /* Center in left half */
+ left: calc(4% + 3.15cm); /* Center in left half */
  cursor: pointer;
  z-index: 2;
  transition: all 0.3s ease;
