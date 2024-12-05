@@ -186,7 +186,7 @@ body, html {
     background-color: transparent;
     border-radius: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     padding: 40px;
@@ -227,13 +227,15 @@ body, html {
   color: #734327;
   font-size: 2rem;
   position: absolute !important; /* Added for precise positioning */
-  right: 1080.6px !important;
+  left: 49% !important;
   top: 510.81px !important; /* Distance from top of the border */
   z-index: 2;
   text-align: center;
   line-height: 1; /* Added for better readability with justified text */
   hyphens: auto; /* Helps with text justification */
   letter-spacing: 0.09rem;
+  animation: slideFromLeft 0.8s ease-out forwards;
+  font-weight: bold;
 }
 
 .tag-text {
@@ -241,13 +243,16 @@ body, html {
   color: #734327;
   font-size: 2rem;
   position: absolute; /* Added for precise positioning */
-  left: 1080.6px;
+  right: 48%;
   top: 510.81px; /* Distance from top of the border */
   z-index: 2;
   text-align: center;
   line-height: 1; /* Added for better readability with justified text */
   hyphens: auto; /* Helps with text justification */
   letter-spacing: 0.09rem;
+  animation: slideFromRight 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+  font-weight: bold;
 }
 
 
