@@ -192,7 +192,7 @@ body, html {
     align-items: center;
     overflow: hidden;
     padding: 40px;
-    z-index: 999;
+    z-index: 1;
 }
 
 .page-border {
@@ -203,7 +203,7 @@ body, html {
     bottom: 15px;
     border: 2px solid #f7aa47;
     border-radius: 15px;
-    z-index: -1;
+    z-index: 0;
     pointer-events: none; /* Allows clicking through the border */
     background-image: url('images/background.png');
     background-size: cover;
