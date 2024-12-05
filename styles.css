@@ -1,3 +1,4 @@
+
 /* General Styling */
 body, html {
   margin: 0;
@@ -182,7 +183,7 @@ body, html {
     top: 19px;
     left: 19px;
     right: 19px;
-    bottom: calc(0.5cm + 1.5in + 20px); /* Space for boxes plus margin */
+    bottom: 19px;
     background-color: transparent;
     border-radius: 15px;
     display: flex;
@@ -207,27 +208,6 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-/* Container for the three boxes */
-.info-boxes-container {
-    position: absolute;
-    bottom: 0.5cm;
-    left: 19px;
-    right: 19px;
-    height: 1.5in;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    z-index: 999;
-}
-
-/* Individual box style */
-.info-box {
-    flex: 1;
-    background-color: #1c7391;
-    border-radius: 15px;
-    height: 100%;
 }
 
 .home-image {
