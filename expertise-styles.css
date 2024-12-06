@@ -20,7 +20,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
   background-color: #1c7391;
   padding: 20px;
   box-sizing: border-box;
@@ -31,6 +31,7 @@ body {
 .about-container {
   position: fixed; /* Change to fixed */
   top: 80px; /* Fixed distance from top */
+  z-index: 100;
   left: 0;
   right: 0;
   bottom: 0;
@@ -47,6 +48,7 @@ body {
 
 .about-content {
   height: 100%; /* Take full height of container */
+  z-index: 101;
   border: 2px solid #f7aa47;
   border-radius: 15px;
   padding: 40px;
@@ -76,7 +78,7 @@ body {
   right: 0cm;
   top: -50px; /* Adjust this to position buttons */
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
-  z-index: 100;
+  z-index: 1001;
 }
 
 .nav-button {
@@ -161,7 +163,8 @@ body {
 
 /* Logo Box */
 .logo-box {
-  position: absolute;
+  position: relative;
+  z-index: 1001;
   top: -100px;
   left: 0cm;
   width: 3in;
