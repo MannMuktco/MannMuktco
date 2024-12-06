@@ -29,7 +29,7 @@ body {
 
 /* Container styles */
 .about-container {
-  position: relative; /* Change to fixed */
+  position: absolute; /* Change to fixed */
   top: 80px; /* Fixed distance from top */
   left: 0;
   right: 0;
