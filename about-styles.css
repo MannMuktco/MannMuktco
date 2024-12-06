@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: -70px; /* Places header in the space above border */
 }
 
