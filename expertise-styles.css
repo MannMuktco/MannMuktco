@@ -53,7 +53,7 @@ body {
   gap: 8px;
   position: absolute; /* Changed from fixed */
   right: 20px;
-  top: -30px; /* Adjust this to position buttons */
+  top: -35px; /* Adjust this to position buttons */
   z-index: 100;
 }
 
