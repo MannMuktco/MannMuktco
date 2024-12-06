@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   padding: 0.3in;
   box-sizing: border-box;
-  margin-top:80px; /* Space from top to border */
+  margin-top:95px; /* Space from top to border */
 }
 
 
@@ -156,9 +156,9 @@ body {
 /* Logo Box */
 .logo-box {
   position: absolute;
-  top: -110px;
+  top: -100px;
   left: 0cm;
-  width: 4in;
+  width: 3in;
   height: 2.5cm;
   border: 2px solid #f7aa47;
   border-radius: 10px;
