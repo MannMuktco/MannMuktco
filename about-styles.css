@@ -2,8 +2,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   background-color: #1c7391;
 }
 
@@ -29,14 +29,14 @@ body {
 
 /* Container styles */
 .about-container {
-  position: fixed; /* Change to fixed */
+  position: absolute; /* Change to fixed */
   top: 80px; /* Fixed distance from top */
   left: 0;
   right: 0;
   bottom: 0;
   padding: 0.3in;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: hidden; /* Hide overflow */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -52,11 +52,10 @@ body {
   padding: 40px;
   box-sizing: border-box;
   background-image: url('images/background.png');
-  background-image-position: relative;
   background-size: cover;
   background-position: center;
   position: relative;
-  overflow: hidden; /* Allow scrolling inside content */
+  overflow-y: auto; /* Allow scrolling inside content */
    -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -64,26 +63,6 @@ body {
 .about-content::-webkit-scrollbar {
   display: none;
 }
-
-.content-scroll {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: auto;
-  background-image: url('images/background.png');
-  background-size: cover;
-  background-position: center;
-  padding: 40px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.content-scroll::-webkit-scrollbar {
-  display: none;
-}
-
 /* Navigation Buttons */
 .navbar {
   display: flex;
