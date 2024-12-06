@@ -2,8 +2,8 @@
 body, html {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
   background-color: #1c7391;
 }
 
@@ -29,7 +29,7 @@ body {
 
 /* Container styles */
 .about-container {
-  position: absolute; /* Change to fixed */
+  position: fixed; /* Change to fixed */
   top: 80px; /* Fixed distance from top */
   left: 0;
   right: 0;
@@ -56,7 +56,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  overflow-y: auto; /* Allow scrolling inside content */
+  overflow: hidden; /* Allow scrolling inside content */
    -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -64,6 +64,25 @@ body {
 .about-content::-webkit-scrollbar {
   display: none;
 }
+
+.scrollable-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
 /* Navigation Buttons */
 .navbar {
   display: flex;
