@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   padding: 0.3in;
   box-sizing: border-box;
-  margin-top:95px; /* Space from top to border */
+  margin-top:80px; /* Space from top to border */
 }
 
 
@@ -58,8 +58,8 @@ body {
   gap: 8px;
   position: absolute; /* Changed from fixed */
   justify-content: flex-end;
-  left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 2cm);
-  top: -100px; /* Adjust this to position buttons */
+  left: 676.3622px;
+  top: 60px; /* Adjust this to position buttons */
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
   z-index: 100;
 }
@@ -79,7 +79,7 @@ body {
   flex: 0 1 auto;
   min-width: 60px;
   max-width: 150px;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   outline: none;
   border: none;
   box-sizing: border-box;
