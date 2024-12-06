@@ -37,6 +37,12 @@ body {
   padding: 0.3in;
   box-sizing: border-box;
   overflow: hidden; /* Hide overflow */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.about-container::-webkit-scrollbar {
+  display: none;
 }
 
 .about-content {
@@ -50,8 +56,13 @@ body {
   background-position: center;
   position: relative;
   overflow-y: auto; /* Allow scrolling inside content */
+   -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
+.about-content::-webkit-scrollbar {
+  display: none;
+}
 /* Navigation Buttons */
 .navbar {
   display: flex;
