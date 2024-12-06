@@ -1,3 +1,4 @@
+
 /* Base styles */
 body, html {
   margin: 0;
@@ -20,7 +21,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
   background-color: #1c7391;
   padding: 20px;
   box-sizing: border-box;
@@ -29,26 +30,15 @@ body {
 
 /* Container styles */
 .about-container {
-  position: fixed; /* Change to fixed */
-  top: 80px; /* Fixed distance from top */
-  z-index: 100;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  min-height: 100vh;
   padding: 0.3in;
   box-sizing: border-box;
-  overflow: hidden; /* Hide overflow */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  margin-top:80px; /* Space from top to border */
 }
 
-.about-container::-webkit-scrollbar {
-  display: none;
-}
 
 .about-content {
-  height: 100%; /* Take full height of container */
-  z-index: 101;
+  min-height: calc(100vh - 0.6in);
   border: 2px solid #f7aa47;
   border-radius: 15px;
   padding: 40px;
@@ -57,13 +47,7 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  overflow-y: auto; /* Allow scrolling inside content */
-   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.about-content::-webkit-scrollbar {
-  display: none;
+  overflow: visible;
 }
 
 
@@ -78,7 +62,7 @@ body {
   right: 0cm;
   top: -50px; /* Adjust this to position buttons */
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
-  z-index: 1001;
+  z-index: 100;
 }
 
 .nav-button {
@@ -163,8 +147,7 @@ body {
 
 /* Logo Box */
 .logo-box {
-  position: relative;
-  z-index: 1001;
+  position: absolute;
   top: -100px;
   left: 0cm;
   width: 3in;
