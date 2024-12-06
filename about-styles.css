@@ -51,7 +51,7 @@ body {
   display: flex;
   align-items: center;
   background-color: #1c7391;
-  padding: 20px;
+  padding: 5px;
   box-sizing: border-box;
   flex-wrap: nowrap;
   gap: 8px;
