@@ -52,6 +52,7 @@ body {
   padding: 40px;
   box-sizing: border-box;
   background-image: url('images/background.png');
+  background-image-position: relative;
   background-size: cover;
   background-position: center;
   position: relative;
