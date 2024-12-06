@@ -1,0 +1,204 @@
+
+/* Base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1c7391;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+  background-color: #1c7391;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #1c7391;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* Container styles */
+.about-container {
+  min-height: 100vh;
+  padding: 0.3in;
+  box-sizing: border-box;
+  margin-top:80px; /* Space from top to border */
+}
+
+
+.about-content {
+  min-height: calc(100vh - 0.6in);
+  border: 2px solid #f7aa47;
+  border-radius: 15px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: visible;
+}
+
+
+/* Navigation Buttons */
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  position: absolute; /* Changed from fixed */
+  justify-content: flex-end;
+  right: 0.2cm;
+  top: -50px; /* Adjust this to position buttons */
+  max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
+  z-index: 100;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: #1c7391;
+  font-family: 'Playpen Sans';
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  flex: 0 1 auto;
+  min-width: 60px;
+  max-width: 150px;
+  font-size: 0.75rem;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-button:hover {
+  color: #734327;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: 35px;
+}
+
+.dropdown-content {
+  display: none;
+  justify-content: left;
+  align-items: left;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 40px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 8px;
+  text-decoration: none;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #1c7391;
+  transition: color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  color: #734327;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.dropdown-content a:hover .contact-icon {
+  transform: scale(1.1);
+}
+
+/* Logo Box */
+.logo-box {
+  position: absolute;
+  top: -100px;
+  left: 0cm;
+  width: 3.3in;
+  height: 2.5cm;
+  border: 2px solid #1c7391;
+  border-radius: 10px;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.logo-box img {
+  width: 2cm;
+  height: 2cm;
+  left: 0.3cm;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+
+.logo-box .company-name {
+  font-family: 'Fredoka';
+  color: #734327;
+  top: 0.8cm;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.logo-box .tagline {
+  font-family: 'Playpen Sans';
+  color: #1c7391;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
