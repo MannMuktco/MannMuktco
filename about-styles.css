@@ -54,7 +54,7 @@ body {
   gap: 8px;
   position: absolute; /* Changed from fixed */
   justify-content: flex-end;
-  left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in);
+  left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 1.7cm);
   top: 40px; /* Adjust this to position buttons */
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
   z-index: 100;
