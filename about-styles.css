@@ -24,13 +24,13 @@ body {
   background-color: #1c7391;
   padding: 20px;
   box-sizing: border-box;
-  height: 67px;
+  height: 100px;
 }
 
 /* Container styles */
 .about-container {
   position: fixed; /* Change to fixed */
-  top: 67px; /* Fixed distance from top */
+  top: 100px; /* Fixed distance from top */
   left: 0;
   right: 0;
   bottom: 0;
@@ -72,7 +72,7 @@ body {
   position: absolute; /* Changed from fixed */
   justify-content: flex-end;
   left: calc(1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 2cm);
-  top: 40px; /* Adjust this to position buttons */
+  top: 80px; /* Adjust this to position buttons */
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
   z-index: 100;
 }
