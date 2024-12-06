@@ -1,4 +1,4 @@
-﻿/* Base styles */
+/* Base styles */
 body, html {
   margin: 0;
   padding: 0;
@@ -15,10 +15,15 @@ body {
   background-attachment: fixed;
 }
 
-
 .header {
-  position: absolute;
-  top: 90px; /* Places header in the space above border */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #1c7391;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 
