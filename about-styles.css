@@ -59,7 +59,7 @@ body {
   position: relative;
   min-height: 100%;
   height: auto;
-  overflow: hidden; /* Allow scrolling inside content */
+  overflow-y: auto; /* Allow scrolling inside content */
    -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
