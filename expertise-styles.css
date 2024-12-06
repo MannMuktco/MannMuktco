@@ -58,8 +58,8 @@ body {
   gap: 8px;
   position: absolute; /* Changed from fixed */
   justify-content: flex-end;
-  left: 676.3622px;
-  top: 60px; /* Adjust this to position buttons */
+  right: 0.5cm;
+  top: -100px; /* Adjust this to position buttons */
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
   z-index: 100;
 }
@@ -67,7 +67,7 @@ body {
 .nav-button {
   text-decoration: none;
   color: #1c7391;
-  font-family: 'Playpen Sans' 'Sans Sarif';
+  font-family: 'Playpen Sans';
   padding: 5px 8px;
   border-radius: 10px;
   background-color: white;
