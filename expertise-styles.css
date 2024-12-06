@@ -59,7 +59,7 @@ body {
   position: absolute; /* Changed from fixed */
   justify-content: flex-end;
   right: 0.5cm;
-  top: -100px; /* Adjust this to position buttons */
+  top: -50px; /* Adjust this to position buttons */
   max-width: calc(100vw - (1.5cm + 110px + 0.5in + 244px + 20px - 0.5in + 20px));
   z-index: 100;
 }
