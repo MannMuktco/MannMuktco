@@ -29,15 +29,24 @@ body {
 
 /* Container styles */
 .about-container {
-  min-height: 100vh;
+  position: fixed; /* Change to fixed */
+  top: 80px; /* Fixed distance from top */
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 0.3in;
   box-sizing: border-box;
-  margin-top:80px; /* Space from top to border */
+  overflow: hidden; /* Hide overflow */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
+.about-container::-webkit-scrollbar {
+  display: none;
+}
 
 .about-content {
-  min-height: calc(100vh - 0.6in);
+  height: 100%; /* Take full height of container */
   border: 2px solid #f7aa47;
   border-radius: 15px;
   padding: 40px;
@@ -46,7 +55,13 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  overflow: visible;
+  overflow-y: auto; /* Allow scrolling inside content */
+   -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.about-content::-webkit-scrollbar {
+  display: none;
 }
 
 
