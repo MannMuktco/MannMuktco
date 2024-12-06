@@ -29,11 +29,11 @@ body {
 
 /* Container styles */
 .about-container {
-  position: absolute; /* Change to fixed */
+  position: fixed; /* Change to fixed */
   top: 80px; /* Fixed distance from top */
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0.5cm;
   padding: 0.3in;
   box-sizing: border-box;
   min-height: calc(100vh - 80px - 0.5cm);
