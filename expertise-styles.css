@@ -79,7 +79,7 @@ body {
   flex: 0 1 auto;
   min-width: 60px;
   max-width: 150px;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   outline: none;
   border: none;
   box-sizing: border-box;
@@ -88,11 +88,9 @@ body {
   text-overflow: ellipsis;
 }
 
-
 .nav-button:hover {
   color: #734327;
 }
-
 
 /* Dropdown Styling */
 .dropdown {
@@ -100,7 +98,6 @@ body {
   display: inline-block;
   height: 35px;
 }
-
 
 .dropdown-content {
   display: none;
@@ -115,11 +112,9 @@ body {
   min-width: 40px;
 }
 
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 .dropdown-content a {
   padding: 8px;
@@ -134,11 +129,9 @@ body {
   transition: color 0.3s ease;
 }
 
-
 .dropdown-content a:hover {
   color: #734327;
 }
-
 
 .contact-icon {
   width: 24px;
@@ -147,11 +140,9 @@ body {
   transition: transform 0.2s;
 }
 
-
 .dropdown-content a:hover .contact-icon {
   transform: scale(1.1);
 }
-
 
 /* Logo Box */
 .logo-box {
