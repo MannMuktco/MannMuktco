@@ -50,9 +50,6 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #1c7391;
-  padding: 5px;
-  box-sizing: border-box;
   flex-wrap: nowrap;
   gap: 8px;
   position: absolute; /* Changed from fixed */
