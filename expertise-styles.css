@@ -177,6 +177,7 @@ html::-webkit-scrollbar {
 .logo-box img {
   width: 2cm;
   height: 2cm;
+  left: 0.3cm;
   object-fit: contain;
   margin-right: 10px;
 }
@@ -195,7 +196,7 @@ html::-webkit-scrollbar {
 .logo-box .tagline {
   font-family: 'Playpen Sans';
   color: #1c7391;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin: 5px 0 0 0;
   padding: 0;
 }
