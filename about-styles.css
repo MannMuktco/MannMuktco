@@ -24,18 +24,23 @@ body {
   background-color: #1c7391;
   padding: 20px;
   box-sizing: border-box;
+  height: 67px;
 }
 
 /* Container styles */
 .about-container {
-  min-height: 100vh;
+  position: fixed; /* Change to fixed */
+  top: 67px; /* Fixed distance from top */
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 0.3in;
   box-sizing: border-box;
-  margin-top: 67px; /* Space from top to border */
+  overflow: hidden; /* Hide overflow */
 }
 
 .about-content {
-  min-height: calc(100vh - 0.6in);
+  height: 100%; /* Take full height of container */
   border: 2px solid #f7aa47;
   border-radius: 15px;
   padding: 40px;
@@ -44,7 +49,8 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  overflow-y: auto;
+  overflow-y: auto; /* Allow scrolling inside content */
+}
 
 /* Navigation Buttons */
 .navbar {
