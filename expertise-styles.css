@@ -175,8 +175,8 @@ html::-webkit-scrollbar {
 
 
 .logo-box img {
-  max-width: 50%;
-  max-height: 80%;
+  width: 2cm;
+  height: 2cm;
   object-fit: contain;
   margin-right: 10px;
 }
