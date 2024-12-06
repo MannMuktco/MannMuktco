@@ -65,6 +65,25 @@ body {
   display: none;
 }
 
+.content-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 /* Navigation Buttons */
 .navbar {
   display: flex;
