@@ -188,6 +188,7 @@ html::-webkit-scrollbar {
   color: #734327;
   top: 0.7cm;
   font-size: 1.5rem;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -197,6 +198,7 @@ html::-webkit-scrollbar {
   font-family: 'Playpen Sans';
   color: #1c7391;
   font-size: 0.9rem;
+  text-align: center;
   margin: 5px 0 0 0;
   padding: 0;
 }
