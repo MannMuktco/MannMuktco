@@ -13,9 +13,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
 }
 
 .header {
