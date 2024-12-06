@@ -67,6 +67,21 @@ body {
 .about-content::-webkit-scrollbar {
   display: none;
 }
+
+.about-content::before {
+  content: '';
+  position: fixed;
+  top: calc(80px + 0.3in);
+  left: 0.3in;
+  right: 0.3in;
+  bottom: calc(0.5cm + 0.3in);
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  border-radius: 15px;
+}
+
 /* Navigation Buttons */
 .navbar {
   display: flex;
