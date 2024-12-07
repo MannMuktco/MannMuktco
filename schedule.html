@@ -57,7 +57,96 @@
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schedule</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="progress-bar">
+    <div class="progress-icon active">Enter your details</div>
+    <div class="progress-icon">Answer a few questions</div>
+    <div class="progress-icon">Choose your slot</div>
+    <div class="progress-icon">Complete your booking</div>
+  </div>
 
+  <div id="content">
+    <section id="intro">
+      <h1>Not feeling your best? You are not alone.</h1>
+      <p>Some content goes here.</p>
+      <button onclick="showSection('details')">Get Started</button>
+    </section>
+
+    <section id="details" style="display: none;">
+      <p>Your answers will be kept confidential and will help us know you better.</p>
+      <form id="detailsForm" onsubmit="return validateForm('feeling')">
+        <!-- Form fields for name, age, sex, gender, email, WhatsApp number -->
+        <button type="submit">Next</button>
+      </form>
+    </section>
+
+    <section id="feeling" style="display: none;">
+      <h2>How are you feeling today?</h2>
+      <form id="feelingForm" onsubmit="return validateForm('past2weeks')">
+        <!-- Checkboxes for feelings -->
+        <button type="submit">Next</button>
+      </form>
+    </section>
+
+    <section id="past2weeks" style="display: none;">
+      <h2>In the past 2 weeks I've felt...</h2>
+      <form id="past2weeksForm" onsubmit="return validateForm('therapist')">
+        <!-- Checkboxes for past 2 weeks feelings (content to be provided) -->
+        <button type="submit">Next</button>
+      </form>
+    </section>
+
+    <section id="therapist" style="display: none;">
+      <h2>Choose your therapist</h2>
+      <form id="therapistForm" onsubmit="return validateForm('message')">
+        <!-- Checkboxes for therapist selection (content to be provided) -->
+        <button type="submit">Next</button>
+      </form>
+    </section>
+
+    <section id="message" style="display: none;">
+      <h2>Here's your first message to your therapist</h2>
+      <form id="messageForm" onsubmit="return validateForm('calendar')">
+        <textarea id="messageText" name="message" rows="5" required></textarea>
+        <button type="submit">Choose a slot</button>
+      </form>
+    </section>
+
+    <section id="calendar" style="display: none;">
+      <!-- Google Calendar embed code goes here -->
+      <button onclick="showSection('payment')">Next</button>
+    </section>
+
+    <section id="payment" style="display: none;">
+      <h2>Payment</h2>
+      <!-- Payment form details to be provided later -->
+    </section>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(sectionId).style.display = 'block';
+    }
+
+    function validateForm(nextSectionId) {
+      // Perform form validation
+      // If validation passes, show the next section
+      showSection(nextSectionId);
+      return false; // Prevent form submission
+    }
+  </script>
+</body>
+</html>
 
 
     
