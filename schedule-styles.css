@@ -203,22 +203,7 @@ html::-webkit-scrollbar {
 }
 
 /* Base styles */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #1c7391;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-body {
-  background-color: #1c7391;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+
 body::-webkit-scrollbar {
   display: none;
 }
