@@ -36,20 +36,6 @@ html::-webkit-scrollbar {
 }
 
 
-.about-content {
-  min-height: calc(100vh - 0.6in);
-  border: 2px solid #f7aa47;
-  border-radius: 15px;
-  padding: 40px;
-  box-sizing: border-box;
-  background-image: url('images/background.png');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: visible;
-}
-
-
 /* Navigation Buttons */
 .navbar {
   display: flex;
