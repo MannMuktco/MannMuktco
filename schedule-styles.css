@@ -36,15 +36,6 @@ html::-webkit-scrollbar {
 }
 
 
-/* Container styles */
-.about-container {
-  min-height: 100vh;
-  padding: 0.3in;
-  box-sizing: border-box;
-  margin-top:80px; /* Space from top to border */
-}
-
-
 .about-content {
   min-height: calc(100vh - 0.6in);
   border: 2px solid #f7aa47;
