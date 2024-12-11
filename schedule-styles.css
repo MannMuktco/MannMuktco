@@ -202,3 +202,101 @@ html::-webkit-scrollbar {
   margin: 5px 0 0 0;
   padding: 0;
 }
+
+/* Progress Bar */
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.progress-icon {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 150px;
+}
+.progress-icon.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.progress-icon.completed {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Content Sections */
+#content {
+  margin-top: 80px;
+}
+section {
+  border: 2px solid #f7aa47;
+  border-radius: 15px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 20px; /* Add margin bottom for spacing between sections */
+}
+h1, h2 {
+  color: #333;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form input[type="checkbox"],
+form input[type="radio"] {
+  margin-right: 5px;
+}
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Calendar Section */
+#calendar {
+  margin-bottom: 20px;
+}
+
+/* Payment Section */
+#payment {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Main Container */
+.main-container {
+  min-height: 100vh;
+  padding: 0.3in;
+  box-sizing: border-box;
+  margin-top: 80px; /* Space from top to border */
+  border: 2px solid #f7aa47;
+  border-radius: 15px;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+}
