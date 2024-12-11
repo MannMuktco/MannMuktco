@@ -193,6 +193,7 @@ html::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  top: 4in;
 }
 .progress-icon {
   text-align: center;
