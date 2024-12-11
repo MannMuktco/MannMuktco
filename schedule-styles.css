@@ -1,3 +1,4 @@
+
 /* Base styles */
 body, html {
   margin: 0;
@@ -33,6 +34,29 @@ html::-webkit-scrollbar {
   background-color: #1c7391;
   padding: 20px;
   box-sizing: border-box;
+}
+
+
+/* Container styles */
+.about-container {
+  min-height: 100vh;
+  padding: 0.3in;
+  box-sizing: border-box;
+  margin-top:80px; /* Space from top to border */
+}
+
+
+.about-content {
+  min-height: calc(100vh - 0.6in);
+  border: 2px solid #f7aa47;
+  border-radius: 15px;
+  padding: 40px;
+  box-sizing: border-box;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: visible;
 }
 
 
@@ -178,14 +202,3 @@ html::-webkit-scrollbar {
   margin: 5px 0 0 0;
   padding: 0;
 }
-
-/* Base styles */
-
-body::-webkit-scrollbar {
-  display: none;
-}
-html::-webkit-scrollbar {
-  display: none;
-}
-
-
